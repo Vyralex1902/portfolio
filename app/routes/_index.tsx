@@ -1,48 +1,38 @@
 import type { MetaFunction } from "@remix-run/node";
+import { useEffect, useState } from "react";
+
+import mypic1 from "../assets/mypic1.jpg"
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Luca's Portfolio" },
+    { name: "Luca's Portfolio", content: "Welcome to Luca's Portfolio!" },
   ];
 };
 
 export default function Index() {
+
+  useEffect(() => {
+    if (
+      localStorage.getItem('color-theme') === 'dark' ||
+      (!('color-theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark');
+    }
+    else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    console.log("Page loaded.");
+  });
+
   return (
-    <div className="font-sans p-4">
-      <h1 className="text-3xl">Welcome to Remix</h1>
-      <ul className="list-disc mt-4 pl-6 space-y-2">
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/start/quickstart"
-            rel="noreferrer"
-          >
-            5m Quick Start
-          </a>
-        </li>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/start/tutorial"
-            rel="noreferrer"
-          >
-            30m Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/docs"
-            rel="noreferrer"
-          >
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+    <div style={{ width: "100%", height: "100%" }} className="flex flex-col justify-center items-center align-top pt-20 bg-white dark:bg-[#1E1E1E]">
+      <div id="topdiv" className="flex flex-col justify-center items-center">
+        <h1 id="title" className="darkmode-text-h2">Luca's Portfolio</h1>
+        <img src={mypic1} className="w-24 h-24 rounded-full border-2 border-gray-600"></img>
+      </div>
     </div>
   );
 }
