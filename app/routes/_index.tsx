@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 import "../styles/home.css";
 
@@ -57,8 +58,47 @@ export default function Index() {
           </a>
         </div>
       </div>
+      <div id="middleStory" className="z-10 flex flex-col justify-center items-center align-top max-w-[500px] bg-gray-400 bg-opacity-40 backdrop-blur-lg p-3 text-gray-700">
+        <h2>I've started programming at the age of 13. I started with VB.NET, then I migrated to...</h2>
+        <a href="/portfolio/mystory"><p className="underline text-blue-600">Continue reading</p></a>
+      </div>
+      <div className="flex flex-row gap-8 mt-3">
+        <div className='' id='downloadbtncontainer'>
+          <div className='flex justify-center pt-2'>
+            <div className='w-fit'>
+              <a href='/'>
+                <div className="downloadbtn_div">
+                  <motion.button className="downloadbtn" whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.8 }}>
+                    <div className='flex flex-col justify-center items-center'>
+                      <p>Hire Me</p>
+                    </div>
+                  </motion.button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className='' id='downloadbtncontainer'>
+          <div className='flex justify-center pt-2'>
+            <div className='w-fit'>
+              <a href='/'>
+                <div className="downloadbtn_div">
+                  <motion.button className="downloadbtn" whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.8 }}>
+                    <div className='flex flex-col justify-center items-center'>
+                      <p>Contact Me</p>
+                    </div>
+                  </motion.button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="z-10 absolute bottom-0 flex flex-row text-center text-black dark:text-white">
-        <h1 id="quote">"Living has to be difficult to be called living."</h1>
+        <h1 id="quote" className="mb-10">
+          "Living has to be difficult to be truly called living."
+          <p className="text-3xl">- Luca M.</p>
+        </h1>
         {/* <p className="z-10 text-black dark:text-white text-3xl">- Luca M. 2024</p> */}
       </div>
     </div>
