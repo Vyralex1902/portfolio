@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import "../styles/home.css";
 
-import mypic1 from "../assets/mypic1.jpg"
+import mypic2 from "../assets/mypic2.jpeg"
 import backgroundImg1 from "../assets/mainPageBackground.jpg"
 
 export const meta: MetaFunction = () => {
@@ -36,13 +36,13 @@ export default function Index() {
       <img className="z-0 absolute top-0 h-[100vh] w-full" src={backgroundImg1}></img>
       <div id="topdiv" className="z-10 flex flex-col justify-center items-center">
         <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Luca's Portfolio</h1>
-        <img src={mypic1} className="w-24 h-24 rounded-full border-2 border-gray-600 animate-reveal"></img>
+        <img src={mypic2} className="w-24 h-24 rounded-full border-2 border-gray-600 animate-reveal"></img>
       </div>
       <div id="middleHeading" className="z-10 bg-gray-400 bg-opacity-30 mt-5 flex flex-row text-black dark:text-white w-[75vh] h-[55px] backdrop-blur-lg border-1 border-gray-300
       rounded-md text-center items-center justify-center align-middle">
         <div className="flex flex-row gap-2 text-gray-600">
           <a href="/portfolio/programming">
-            <h3 className="hover:text-green-700">Programming</h3>
+            <h3 className="hover:text-green-700">Coding Knowledge</h3>
           </a>
           <p>|</p>
           <a href="/portfolio/hobbies">
@@ -59,7 +59,7 @@ export default function Index() {
         </div>
       </div>
       <div id="middleStory" className="z-10 flex flex-col justify-center items-center align-top max-w-[500px] bg-gray-400 bg-opacity-40 backdrop-blur-lg p-3 text-gray-700">
-        <h2>I've started programming at the age of 13. I started with VB.NET, then I migrated to...</h2>
+        <h2>I had started programming at the age of 13. I started with VB.NET, then I migrated to...</h2>
         <a href="/portfolio/mystory"><p className="underline text-blue-600">Continue reading</p></a>
       </div>
       <div className="flex flex-row gap-8 mt-3">
@@ -94,9 +94,19 @@ export default function Index() {
           </div>
         </div>
       </div>
+      <div id="myinfodiv" className="z-10 mt-10 flex flex-col justify-center items-center align-top w-[290px] bg-black bg-opacity-40 backdrop-blur-lg p-3
+       text-gray-300 rounded-md">
+        <h2 className="text-3xl">
+          <span className="text-purple-400">&gt;</span> 18 years old
+          <br />
+          <span className="text-purple-400">&gt;</span> Living in <span className="text-green-500">It</span><span className="text-white">a</span><span className="text-red-500">ly</span>
+          <br />
+          <span className="text-purple-400">&gt;</span> Speaking en & it
+        </h2>
+      </div>
       <div className="z-10 absolute bottom-0 flex flex-row text-center text-black dark:text-white">
         <h1 id="quote" className="mb-10">
-          "Living has to be difficult to be truly called living."
+          "Try whatever you can, go beyond your limits."
           <p className="text-3xl">- Luca M.</p>
         </h1>
         {/* <p className="z-10 text-black dark:text-white text-3xl">- Luca M. 2024</p> */}

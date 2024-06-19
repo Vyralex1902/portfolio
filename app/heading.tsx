@@ -14,7 +14,7 @@ const Heading = () => {
       <div className="backdrop-blur-lg border-gray-500 border-opacity-40 border-2 flex w-fit justify-center py-2 rounded-lg items-center" style={{ width: "50%" }}>
         <div className="flex w-fit justify-center absolute justify-self-center gap-2" style={{ width: "50%" }}>
           <HeadingIcon icon={<FaHome style={{ width: "50%", height: "50%", color: "white" }} />} text="Home" link="/" ></HeadingIcon>
-          <HeadingIcon icon={<IoCodeSlashOutline style={{ width: "50%", height: "50%", color: "white" }} />} text="Programming" link="/programming" ></HeadingIcon>
+          <HeadingIcon icon={<IoCodeSlashOutline style={{ width: "50%", height: "50%", color: "white" }} />} text="Coding Knowledge" link="/programming" ></HeadingIcon>
           <HeadingIcon icon={<TbGymnastics style={{ width: "50%", height: "50%", color: "white" }} />} text="Free Time" link="/hobbies" ></HeadingIcon>
           <HeadingIcon icon={<FaHistory style={{ width: "50%", height: "50%", color: "white" }} />} text="My Story" link="/mystory" ></HeadingIcon>
           <HeadingIcon icon={<IoBag style={{ width: "50%", height: "50%", color: "white" }} />} text="Current Occupation" link="/work-now" ></HeadingIcon>
