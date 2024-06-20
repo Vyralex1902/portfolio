@@ -1,0 +1,56 @@
+h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#subtitle {
+  font-family: 'RanchinoLight';
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#sectionDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px;
+  border-color: gray;
+}
+
+#sectionContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  grid-column-gap: 250px;
+  grid-row-gap: 0px;
+}
+
+.text-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: 0.15em solid orange;
+  /* Cursor effect */
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
