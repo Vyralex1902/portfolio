@@ -8,10 +8,13 @@ import { IoBag } from "react-icons/io5";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import mypic2 from "./assets/mypic2.jpeg"
+
 const Heading = () => {
   return (
     <div className="fixed top-0 flex flex-row pt-1 pb-1 z-50 justify-center w-screen h-[75px]">
       <div className="backdrop-blur-lg border-gray-500 border-opacity-40 border-2 flex w-fit justify-center py-2 rounded-lg items-center" style={{ width: "50%" }}>
+        <img src={mypic2} className="ml-5 w-14 h-14 align-middle rounded-full animate-reveal absolute left-2 top-1"></img>
         <div className="flex w-fit justify-center absolute justify-self-center gap-2" style={{ width: "50%" }}>
           <HeadingIcon icon={<FaHome style={{ width: "50%", height: "50%", color: "white" }} />} text="Home" link="/" ></HeadingIcon>
           <HeadingIcon icon={<IoCodeSlashOutline style={{ width: "50%", height: "50%", color: "white" }} />} text="Coding Knowledge" link="/programming" ></HeadingIcon>
