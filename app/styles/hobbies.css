@@ -1,0 +1,19 @@
+h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#sectionDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px;
+  border-color: gray;
+}
+
+#sectionContainer{
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-column-gap: 250px;
+    grid-row-gap: 0px;
+}

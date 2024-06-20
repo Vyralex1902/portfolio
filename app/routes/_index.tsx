@@ -46,7 +46,7 @@ export default function Index() {
           </a>
           <p>|</p>
           <a href="/portfolio/hobbies">
-            <h3 className="hover:text-green-700">Hobbies</h3>
+            <h3 className="hover:text-green-700">Passions</h3>
           </a>
           <p>|</p>
           <a href="/portfolio/mystory">
@@ -104,7 +104,7 @@ export default function Index() {
           <span className="text-purple-400">&gt;</span> Speaking en & it
         </h2>
       </div>
-      <div className="z-10 absolute bottom-0 flex flex-row text-center text-black dark:text-white">
+      <div className="z-10 absolute bottom-0 flex flex-row text-center text-white">
         <h1 id="quote" className="mb-10">
           "Try whatever you can, go beyond your limits."
           <p className="text-3xl">- Luca M.</p>
