@@ -33,10 +33,10 @@ export default function ContactMe() {
               <label className="underline text-sm">Message</label>
               <textarea id="_message" className="resize-none bg-white dark:bg-[#1E1E1E] w-[500px] h-[200px] max-h-[200px] placeholder-gray-500" placeholder="Hey! I would like to suggest you an app: AppName. Here is the link: https://google.com"></textarea>
             </div>
-            <div id="submitDiv" className="flex flex-row justify-center w-[400px]">
-              <motion.button className="submitbtn" whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.8 }}>
-                <div className='flex flex-row justify-center align-middle'>
-                  <IoMdSend />
+            <div id="submitDiv" className="flex flex-row justify-center mt-5">
+              <motion.button className="w-[300px]" whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.8 }}>
+                <div className='flex flex-row justify-center align-middle bg-gray-500 dark:bg-gray-400 bg-opacity-30 rounded-md'>
+                  <IoMdSend className="w-5 h-5 mr-2 mt-[2px]" />
                   <p>Send</p>
                 </div>
               </motion.button>
