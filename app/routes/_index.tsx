@@ -81,7 +81,7 @@ export default function Index() {
         <div className='' id='downloadbtncontainer'>
           <div className='flex justify-center pt-2'>
             <div className='w-fit'>
-              <a href='/'>
+              <a href='/portfolio/contactme'>
                 <div className="downloadbtn_div">
                   <motion.button className="downloadbtn" whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.8 }}>
                     <div className='flex flex-col justify-center items-center'>
