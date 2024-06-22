@@ -8,6 +8,9 @@ import mypic2 from "../assets/mypic2.jpeg"
 import backgroundImg1 from "../assets/mainPageBackground.jpg"
 import macFrame from "../assets/mac-frame.png"
 
+import { FaYoutube, FaInstagram } from "react-icons/fa6";
+import { RxDividerVertical } from "react-icons/rx";
+
 export const meta: MetaFunction = () => {
   return [
     { title: "Luca's Portfolio" },
@@ -33,9 +36,9 @@ export default function Index() {
   });
 
   return (
-    <div style={{ width: "100%", height: "100%" }} className="flex flex-col justify-center items-center align-top pt-20 bg-white dark:bg-[#1E1E1E]">
+    <div style={{ width: "100%", height: "100%" }} className="flex flex-col justify-center items-center align-top pt-24 bg-white dark:bg-[#1E1E1E]">
       <img className="z-0 absolute top-0 h-[100vh] w-full" src={backgroundImg1}></img>
-      <img className="z-0 absolute w-[140vh] mt-[90px]" src={macFrame}></img>
+      <img className="z-0 absolute w-[140vh] mt-[70px] opacity-75" src={macFrame}></img>
       <div id="topdiv" className="z-10 flex flex-col justify-center items-center">
         <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Luca's Portfolio</h1>
         <img src={mypic2} className="w-24 h-24 rounded-full border-2 border-gray-600 animate-reveal"></img>
@@ -112,21 +115,17 @@ export default function Index() {
           <p className="text-3xl">- Luca M.</p>
         </h1>
       </div> */}
-      <div id="bottomLinks" className="z-10 absolute bottom-0 flex flex-row text-center text-white bg-gray-700 bg-opacity-95 p-2">
-        <div className="flex flex-row gap-2 text-white">
-          <a href="">
-            <h3 className="hover:text-purple-400">Youtube</h3>
+      <div id="bottomLinks" className="z-10 absolute bottom-0 flex flex-row text-center text-white bg-gray-700 bg-opacity-95 py-2 px-5">
+        <div className="flex flex-row gap-2 align-midde text-white">
+          <a href="https://is.gd/VuJcew" className="mt-[5px]">
+            <FaYoutube className="h-8 w-8 hover:text-green-500" />
           </a>
-          <p>|</p>
-          <a href="https://is.gd/VuJcew">
-            <h3 className="hover:text-purple-400">Youtube (gaming)</h3>
-          </a>
-          <p>|</p>
-          <a href="https://is.gd/flpzrg">
-            <h3 className="hover:text-purple-400">Instagram</h3>
+          <RxDividerVertical className="w-8 h-8 mt-1" />
+          <a href="https://is.gd/flpzrg" className="mt-[5px]">
+            <FaInstagram className="w-8 h-8 hover:text-green-500" />
           </a>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
