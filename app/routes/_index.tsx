@@ -38,7 +38,7 @@ export default function Index() {
   return (
     <div style={{ width: "100%", height: "100%" }} className="flex flex-col justify-center items-center align-top pt-24 bg-white dark:bg-[#1E1E1E]">
       <img className="z-0 absolute top-0 h-[100vh] w-full" src={backgroundImg1}></img>
-      <img className="z-0 absolute w-[140vh] mt-[70px] opacity-75" src={macFrame}></img>
+      {/* <img className="z-0 absolute w-[140vh] mt-[70px] opacity-75" src={macFrame}></img> */}
       <div id="topdiv" className="z-10 flex flex-col justify-center items-center">
         <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Luca's Portfolio</h1>
         <img src={mypic2} className="w-24 h-24 rounded-full border-2 border-gray-600 animate-reveal"></img>
