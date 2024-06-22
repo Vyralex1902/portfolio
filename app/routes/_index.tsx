@@ -6,6 +6,7 @@ import "../styles/home.css";
 
 import mypic2 from "../assets/mypic2.jpeg"
 import backgroundImg1 from "../assets/mainPageBackground.jpg"
+import macFrame from "../assets/mac-frame.png"
 
 export const meta: MetaFunction = () => {
   return [
@@ -34,6 +35,7 @@ export default function Index() {
   return (
     <div style={{ width: "100%", height: "100%" }} className="flex flex-col justify-center items-center align-top pt-20 bg-white dark:bg-[#1E1E1E]">
       <img className="z-0 absolute top-0 h-[100vh] w-full" src={backgroundImg1}></img>
+      <img className="z-0 absolute w-[140vh] mt-[90px]" src={macFrame}></img>
       <div id="topdiv" className="z-10 flex flex-col justify-center items-center">
         <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Luca's Portfolio</h1>
         <img src={mypic2} className="w-24 h-24 rounded-full border-2 border-gray-600 animate-reveal"></img>
@@ -104,12 +106,26 @@ export default function Index() {
           <span className="text-purple-400">&gt;</span> Speaking en & it
         </h2>
       </div>
-      <div className="z-10 absolute bottom-0 flex flex-row text-center text-white">
+      {/* <div className="z-10 absolute bottom-0 flex flex-row text-center text-white">
         <h1 id="quote" className="mb-10">
           "Try whatever you can, go beyond your limits."
           <p className="text-3xl">- Luca M.</p>
         </h1>
-        {/* <p className="z-10 text-black dark:text-white text-3xl">- Luca M. 2024</p> */}
+      </div> */}
+      <div id="bottomLinks" className="z-10 absolute bottom-0 flex flex-row text-center text-white bg-gray-700 bg-opacity-95 p-2">
+        <div className="flex flex-row gap-2 text-white">
+          <a href="">
+            <h3 className="hover:text-purple-400">Youtube</h3>
+          </a>
+          <p>|</p>
+          <a href="https://is.gd/VuJcew">
+            <h3 className="hover:text-purple-400">Youtube (gaming)</h3>
+          </a>
+          <p>|</p>
+          <a href="https://is.gd/flpzrg">
+            <h3 className="hover:text-purple-400">Instagram</h3>
+          </a>
+        </div>
       </div>
     </div>
   );

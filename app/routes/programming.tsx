@@ -45,7 +45,7 @@ export default function Programming() {
           </div>
         </div>
         <div className="relative bottom-6">
-          <a href="">
+          <a href="/portfolio/contactme">
             <p className="underline text-blue-600 dark:text-blue-500">
               Suggest a programming language
             </p>

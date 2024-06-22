@@ -4,7 +4,7 @@
 
 @layer components {
   .heading-icon {
-    @apply relative flex items-center justify-center h-12 w-12 my-auto hover:bg-green-400 bg-green-600 rounded-3xl hover:rounded-xl transition-all;
+    @apply relative flex items-center justify-center h-12 w-12 my-auto hover:bg-cyan-500 bg-cyan-700 rounded-3xl hover:rounded-xl transition-all;
   }
 
   .heading-tooltip {
