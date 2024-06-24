@@ -28,7 +28,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        -name: Install & Build
+      -name: Install & Build
         run:
           npm i
           npm run build
