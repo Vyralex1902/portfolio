@@ -7,6 +7,7 @@ import "../styles/home.css";
 import mypic2 from "../assets/mypic2.jpeg"
 import backgroundImg1 from "../assets/mainPageBackground.jpg"
 import macFrame from "../assets/mac-frame.png"
+import tertitimg from "../assets/terminaltitle.png"
 
 import { FaYoutube, FaInstagram } from "react-icons/fa6";
 import { RxDividerVertical } from "react-icons/rx";
@@ -57,10 +58,6 @@ export default function Index() {
           <a href="/portfolio/mystory">
             <h3 className="hover:text-green-700">My Story</h3>
           </a>
-          <p>|</p>
-          <a href="/portfolio/work-now">
-            <h3 className="hover:text-green-700">Current Occupation</h3>
-          </a>
         </div>
       </div>
       <div id="middleStory" className="z-10 flex flex-col justify-center items-center align-top max-w-[500px] bg-gray-400 bg-opacity-40 backdrop-blur-lg p-3 text-gray-700">
@@ -99,14 +96,21 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <div id="myinfodiv" className="z-10 mt-10 flex flex-col justify-center items-center align-top w-[290px] bg-black bg-opacity-40 backdrop-blur-lg p-3
+      <img className="z-10 w-[425px] h-[20px]" src={tertitimg}></img>
+      <div id="myinfodiv" className="z-10 -mt-1 flex flex-col justify-center items-left align-top w-[425px] bg-black bg-opacity-40 backdrop-blur-lg p-3
        text-gray-300 rounded-md">
         <h2 className="text-3xl">
-          <span className="text-purple-400">&gt;</span> 18 years old
+          <span className="text-green-400">.age</span>&nbsp; <span className="text-purple-400">$&gt;</span> 18 years old
           <br />
-          <span className="text-purple-400">&gt;</span> Living in <span className="text-green-500">It</span><span className="text-white">a</span><span className="text-red-500">ly</span>
+          <span className="text-green-400">.loc</span> &nbsp;&nbsp;<span className="text-purple-400">$&gt;</span> Living in <span className="text-green-500">It</span><span className="text-white">a</span><span className="text-red-500">ly</span>
           <br />
-          <span className="text-purple-400">&gt;</span> Speaking en & it
+          <span className="text-green-400">.lang</span> <span className="text-purple-400">$&gt;</span> Speaking en & it
+        </h2>
+      </div>
+      <div id="myinfodiv" className="z-10 mt-10 flex flex-col justify-center items-center align-top w-[425px] bg-black bg-opacity-40 backdrop-blur-lg p-3
+       text-gray-300 rounded-md">
+        <h2 className="text-3xl">
+          <span className="text-purple-400">Current Profession &gt;</span> Student
         </h2>
       </div>
       {/* <div className="z-10 absolute bottom-0 flex flex-row text-center text-white">

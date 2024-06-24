@@ -20,7 +20,6 @@ const Heading = () => {
           <HeadingIcon icon={<IoCodeSlashOutline style={{ width: "50%", height: "50%", color: "white" }} />} text="Coding Knowledge" link="/programming" ></HeadingIcon>
           <HeadingIcon icon={<TbGymnastics style={{ width: "50%", height: "50%", color: "white" }} />} text="Passions" link="/hobbies" ></HeadingIcon>
           <HeadingIcon icon={<FaHistory style={{ width: "50%", height: "50%", color: "white" }} />} text="My Story" link="/mystory" ></HeadingIcon>
-          <HeadingIcon icon={<IoBag style={{ width: "50%", height: "50%", color: "white" }} />} text="Current Occupation" link="/work-now" ></HeadingIcon>
         </div>
         <div id="themeToggle" className="border-2 border-white border-opacity-20 w-12 h-12 rounded-3xl bg-black bg-opacity-35 hover:bg-opacity-50
           dark:bg-white dark:bg-opacity-20 justify-center align-middle flex items-center absolute right-0 mr-5">
