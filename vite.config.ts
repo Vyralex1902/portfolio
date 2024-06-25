@@ -7,5 +7,5 @@ installGlobals();
 
 export default defineConfig({
   base: '/portfolio/',
-  plugins: [remix({ basename: '/portfolio/', }), tsconfigPaths()],
+  plugins: [remix({ basename: '/portfolio/', ssr:false}), tsconfigPaths()],
 });
