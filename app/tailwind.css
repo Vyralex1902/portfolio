@@ -22,4 +22,8 @@
   .darkmode-bg {
     @apply bg-white dark:bg-[#1E1E1E];
   }
+
+  .fjc{
+    @apply flex justify-center
+  }
 }

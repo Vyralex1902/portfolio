@@ -15,6 +15,7 @@ export default function ContactMe() {
 
   return (
     <div className="flex flex-col align-top">
+      <input type="text" className="absolute hidden" id="pageName" value={"contactme"}></input>
       <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top bg-white dark:bg-[#1E1E1E] text-black dark:text-white">
         <div id="topdiv" className="z-10 flex flex-col align-top items-center mt-20">
           <h1 id="title" className="text-gray-500 animate-slideInFromTop">Contact Luca</h1>

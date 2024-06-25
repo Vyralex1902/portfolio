@@ -17,13 +17,14 @@ export default function HobbiesPage() {
 
   return (
     <div className="flex flex-col align-top">
+      <input type="text" className="absolute hidden" id="pageName" value={"mystory"}></input>
       <img className="z-0 fixed top-0 h-[100vh] w-full pointer-events-none" src={backgroundImg}></img>
       <div style={{ width: "100%", height: "auto" }} className="flex flex-col items-center align-top bg-white dark:bg-[#1E1E1E] text-white">
         <div id="topdiv" className="z-10 flex flex-col align-top items-center mt-20">
           <h1 id="title" className="text-gray-500 animate-slideInFromTop">Luca's Story</h1>
           <h3 id="subtitle" className="text-sky-600">How I started programming</h3>
         </div>
-        <div className="z-10 flex flex-col align-top items-center max-w-[120vh] mt-10 backdrop-blur-md bg-black bg-opacity-5 rounded-lg p-4" id="text-container">
+        <div className="z-10 flex flex-col align-top items-center max-w-[55vw] mt-10 backdrop-blur-md bg-black bg-opacity-5 rounded-lg p-4" id="text-container">
           <p className="text-white text-3xl">
             It all started in January 2016 when I was 9 years old. I began to develop an interest in coding. Initially, I watched YouTube videos about programming and coding. Since my English skills were quite poor, I primarily watched Italian videos. These videos provided me with a general overview of what coding was and the challenges involved in learning it. At first, I thought, "Okay, this is hard. Let's just wait and add it to my future schedule."
             At the age of 13, I began learning my first programming language: VB.NET. After grasping the basics of VB.NET, I decided to enhance my skills by learning C#, a more advanced high-level programming language primarily used for creating applications with the Microsoft .NET Framework. I dedicated about four years to learning and practicing C# before expanding my skill set with additional programming languages. I knew from the start that programming would be my future career.

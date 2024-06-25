@@ -11,6 +11,10 @@ h3{
   border-radius: 10px 10px 0px 0px;
 }
 
+#myinfodiv{
+  border-radius: 0px 0px 6px 6px;
+}
+
 /* Main BTNs */
 
 .downloadbtn_div {
@@ -21,9 +25,8 @@ h3{
 .downloadbtn_div button {
   width: 130px;
   height: 50px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255,255,255, 0.3);
   backdrop-filter: blur(10px);
-  color: white;
   position: relative;
   overflow: hidden;
   font-size: 14px;

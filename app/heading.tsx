@@ -10,7 +10,13 @@ import { Link } from "react-router-dom";
 
 import mypic2 from "./assets/mypic2.jpeg"
 
+var switchableTheme = true;
+
 const Heading = () => {
+  useEffect(() => {
+    console.log("Heading loaded.");
+  });
+
   return (
     <div className="fixed top-0 flex flex-row pt-1 pb-1 z-50 justify-center w-screen h-[75px]">
       <div className="backdrop-blur-lg border-gray-500 border-opacity-40 border-2 flex w-fit justify-center py-2 rounded-lg items-center" style={{ width: "50%" }}>
@@ -42,25 +48,41 @@ const HeadingIcon = ({ icon, text = 'Text', link }: { icon: any, text: any, link
 );
 
 const toggleTheme = () => {
-  console.log("Theme toggled.");
-  if (localStorage.getItem('color-theme')) {
-    if (localStorage.getItem('color-theme') === 'light') {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('color-theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('color-theme', 'light');
-    }
+  if (
+    document.getElementById("pageName")?.getAttribute('value') == "buyservice"
+    || document.getElementById("pageName")?.getAttribute('value') == "home"
+    || document.getElementById("pageName")?.getAttribute('value') == "mystory"
+  ) {
+    switchableTheme = false;
+  }
+  else {
+    switchableTheme = true;
+  }
 
-    // if NOT set via local storage previously
-  } else {
-    if (document.documentElement.classList.contains('dark')) {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('color-theme', 'light');
+  if (switchableTheme) {
+    if (localStorage.getItem('color-theme')) {
+      if (localStorage.getItem('color-theme') === 'light') {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      }
+
+      // if NOT set via local storage previously
     } else {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('color-theme', 'dark');
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      }
     }
+    console.log("Theme toggled.");
+  }
+  else {
+    alert("Sorry, you can't switch to dark theme on this page. We locked it either because it only looks good in light mode or because these is no need to switch it.");
   }
 }
 export default Heading;
