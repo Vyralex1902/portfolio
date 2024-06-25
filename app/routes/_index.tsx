@@ -7,6 +7,7 @@ import "../styles/home.css";
 import mypic2 from "../assets/mypic2.jpeg"
 import mypic3 from "../assets/mypic3.png"
 import backgroundImg1 from "../assets/mainPageBackground.jpg"
+import separatorimg from "../assets/separatorimg.jpg"
 import macFrame from "../assets/mac-frame.png"
 import tertitimg from "../assets/terminaltitle.png"
 
@@ -48,7 +49,7 @@ export default function Index() {
   return (
     <div style={{ width: "100%", height: "100%" }} className="fjc flex-col items-center align-top pt-24">
       <input type="text" className="absolute hidden" id="pageName" value={"home"} readOnly></input>
-      <img className="z-0 absolute top-0 h-[100vh] w-full" src={backgroundImg1}></img>
+      <img className="z-0 fixed top-0 h-[100vh] w-full" src={backgroundImg1}></img>
       {/* <img className="z-0 absolute w-[140vh] mt-[70px] opacity-75" src={macFrame}></img> */}
       <div id="topdiv" className="z-10 flex flex-col justify-center items-center">
         <h1 id="title" className="text-white animate-slideInFromTop">Luca's Portfolio</h1>
@@ -125,7 +126,7 @@ export default function Index() {
           <span className="text-purple-400">Current Profession &gt;</span> Student
         </h2>
       </div>
-      <div id="freelancingSectionDiv" className="z-10 mt-28 flex flex-col justify-center items-center align-top w-[40vw] bg-white bg-opacity-10
+      <div id="freelancingSectionDiv" className="z-10 mt-28 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-white bg-opacity-10
       backdrop-blur-md p-3 text-gray-300 rounded-lg">
         <div className="flex flex-col items-center align-top mb-6">
           <h1 className="text-4xl text-green-400">
@@ -158,7 +159,7 @@ export default function Index() {
 
 
 
-      <div id="bottomLinks" className="z-10 absolute bottom-0 flex flex-row text-center text-white bg-gray-700 bg-opacity-95 py-2 px-5">
+      <div id="bottomLinks" className="z-10 fixed bottom-0 flex flex-row text-center text-white bg-gray-700 bg-opacity-95 py-2 px-5">
         <div className="flex flex-row gap-2 align-midde text-white">
           <a href="https://is.gd/VuJcew" className="mt-[5px]">
             <FaYoutube className="h-8 w-8 hover:text-green-500" />
