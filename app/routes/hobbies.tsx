@@ -16,7 +16,7 @@ export default function HobbiesPage() {
 
   return (
     <div className="flex flex-col align-top">
-      <input type="text" className="absolute hidden" id="pageName" value={"hobbies"}></input>
+      <input type="text" className="absolute hidden" id="pageName" value={"hobbies"} readOnly></input>
       <div style={{ width: "100%", height: "100%" }} className="flex flex-col justify-center items-center align-top bg-white dark:bg-[#1E1E1E]
        text-black dark:text-white">
         <div id="topdiv" className="z-10 flex flex-col justify-center items-center mt-20">

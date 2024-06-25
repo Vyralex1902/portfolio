@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import "../styles/home.css";
 
 import mypic2 from "../assets/mypic2.jpeg"
+import mypic3 from "../assets/mypic3.png"
 import backgroundImg1 from "../assets/mainPageBackground.jpg"
 import macFrame from "../assets/mac-frame.png"
 import tertitimg from "../assets/terminaltitle.png"
@@ -22,6 +23,14 @@ export const meta: MetaFunction = () => {
 export default function Index() {
 
   useEffect(() => {
+    const ppic = document.getElementById("profilepic1");
+    if (ppic) {
+      const rnd = Math.floor(Math.random() * 2);
+      switch (rnd) {
+        case 0: ppic.setAttribute('src', mypic2); break;
+        case 1: ppic.setAttribute('src', mypic3); break;
+      }
+    }
     if (
       localStorage.getItem('color-theme') === 'dark' ||
       (!('color-theme' in localStorage) &&
@@ -37,15 +46,15 @@ export default function Index() {
   });
 
   return (
-    <div style={{ width: "100%", height: "100%" }} className="fjc flex-col items-center align-top pt-24 darkmode-bg">
-      <input type="text" className="absolute hidden" id="pageName" value={"home"}></input>
+    <div style={{ width: "100%", height: "100%" }} className="fjc flex-col items-center align-top pt-24">
+      <input type="text" className="absolute hidden" id="pageName" value={"home"} readOnly></input>
       <img className="z-0 absolute top-0 h-[100vh] w-full" src={backgroundImg1}></img>
       {/* <img className="z-0 absolute w-[140vh] mt-[70px] opacity-75" src={macFrame}></img> */}
       <div id="topdiv" className="z-10 flex flex-col justify-center items-center">
-        <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Luca's Portfolio</h1>
-        <img src={mypic2} className="w-24 h-24 rounded-full border-2 border-gray-600 animate-reveal"></img>
+        <h1 id="title" className="text-white animate-slideInFromTop">Luca's Portfolio</h1>
+        <img id="profilepic1" className="w-24 h-24 rounded-full border-2 border-gray-600 animate-reveal"></img>
       </div>
-      <div id="middleHeading" className="z-10 bg-white bg-opacity-20 mt-5 flex flex-row text-black dark:text-white w-[50vw] h-[55px] backdrop-blur-lg border-1 border-gray-300
+      <div id="middleHeading" className="z-10 bg-white bg-opacity-20 mt-5 flex flex-row text-white w-[50vw] h-[55px] backdrop-blur-lg border-1 border-gray-300
       rounded-md text-center items-center justify-center align-middle">
         <div className="flex flex-row gap-2 text-gray-600">
           <a href="/portfolio/programming">
@@ -69,7 +78,7 @@ export default function Index() {
         <div className='' id='downloadbtncontainer'>
           <div className='flex justify-center pt-2'>
             <div className='w-fit'>
-              <a href='/'>
+              <a href='/portfolio/hireme'>
                 <div className="downloadbtn_div">
                   <motion.button className="downloadbtn" whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.8 }}>
                     <div className='flex flex-col justify-center items-center'>

@@ -17,7 +17,7 @@ export default function HobbiesPage() {
 
   return (
     <div className="flex flex-col align-top">
-      <input type="text" className="absolute hidden" id="pageName" value={"mystory"}></input>
+      <input type="text" className="absolute hidden" id="pageName" value={"mystory"} readOnly></input>
       <img className="z-0 fixed top-0 h-[100vh] w-full pointer-events-none" src={backgroundImg}></img>
       <div style={{ width: "100%", height: "auto" }} className="flex flex-col items-center align-top bg-white dark:bg-[#1E1E1E] text-white">
         <div id="topdiv" className="z-10 flex flex-col align-top items-center mt-20">
