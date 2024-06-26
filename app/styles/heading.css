@@ -1,0 +1,9 @@
+#headingThing {
+  width: 40%;
+}
+
+@media only screen and (max-width: 900px) {
+  #headingThing {
+    width: 90%;
+  }
+}

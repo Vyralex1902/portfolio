@@ -1,9 +1,11 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Swal from 'sweetalert2';
 
 import "../styles/home.css";
 
+import mypic1 from "../assets/mypic1.jpeg"
 import mypic2 from "../assets/mypic2.jpeg"
 import mypic3 from "../assets/mypic3.png"
 import backgroundImg2 from "../assets/mainPageBackground2.jpg"
@@ -27,10 +29,11 @@ export default function Index() {
   useEffect(() => {
     const ppic = document.getElementById("profilepic1");
     if (ppic) {
-      const rnd = Math.floor(Math.random() * 2);
+      const rnd = Math.floor(Math.random() * 3);
       switch (rnd) {
         case 0: ppic.setAttribute('src', mypic2); break;
         case 1: ppic.setAttribute('src', mypic3); break;
+        case 2: ppic.setAttribute('src', mypic1); break;
       }
     }
     if (
@@ -44,14 +47,32 @@ export default function Index() {
       document.documentElement.classList.remove('dark');
     }
 
+    const alert_user = (i: any, t1: any, t2: any) => {
+      Swal.fire({
+        icon: i,
+        title: t1,
+        text: t2,
+        customClass: 'swal',
+      })
+    }
+
     console.log("Page loaded.");
+
+    if (window.innerWidth < 900) {
+      alert_user('info', 'Hey!', "It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC. If you use your mobile device you will miss out on many cool animations and effects, plus, the interface is very bad.");
+      document.getElementById("MobileAlert")?.classList.remove("hidden");
+    }
+    else {
+      document.getElementById("MobileAlert")?.classList.add("hidden");
+    }
   });
 
   return (
     <div style={{ width: "100%", height: "100%" }} className="fjc flex-col items-center align-top pt-24">
       <input type="text" className="absolute hidden" id="pageName" value={"home"} readOnly></input>
       <img className="z-0 fixed top-0 h-[100vh] w-full" src={backgroundImg2}></img>
-      <div id="middleHeading" className="z-10 bg-white bg-opacity-20 mt-5 fjc flex-row text-white w-[50vw] h-[55px] backdrop-blur-lg
+      <div id="MobileAlert" className="absolute top-[75px] max-w-[90vw] text-yellow-400"><p>It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC.</p></div>
+      <div id="middleHeading" className="z-10 bg-white bg-opacity-20 mt-5 fjc flex-row text-white w-[35vw] h-[55px] backdrop-blur-lg
       rounded-md text-center items-center align-middle">
         <div className="flex flex-row gap-2 text-gray-600">
           <a href="/portfolio/programming">
@@ -67,7 +88,7 @@ export default function Index() {
           </a>
         </div>
       </div>
-      <div id="middleStory" className="z-10 flex flex-col justify-center items-center align-top max-w-[500px] bg-white bg-opacity-20 backdrop-blur-lg p-3 text-gray-600">
+      <div id="middleStory" className="z-10 flex flex-col justify-center items-center align-top max-w-[25vw] bg-white bg-opacity-20 backdrop-blur-lg p-3 text-gray-600">
         <h2>I had started programming at the age of 13. I started with VB.NET, then I migrated to...</h2>
         <a href="/portfolio/mystory"><p className="underline text-blue-600">Continue reading</p></a>
       </div>
@@ -92,7 +113,7 @@ export default function Index() {
               </div>
             </div>
           </div>
-          <img id="profilepic1" className="w-24 h-24 rounded-full border-2 border-gray-600 animate-reveal"></img>
+          <img id="profilepic1" className="w-[10vw] h-[10vw] rounded-full border-2 border-gray-600 animate-reveal"></img>
           <div className='' id='downloadbtncontainer'>
             <div className='flex justify-center pt-2'>
               <div className='w-fit'>
@@ -111,8 +132,8 @@ export default function Index() {
         </div>
       </div>
 
-      <img className="z-20 w-[500px]" src={tertitimg}></img>
-      <div id="myinfodiv" className="z-10 -mt-2 flex flex-col justify-center items-center align-top w-[499px] bg-black bg-opacity-40 backdrop-blur-lg p-3
+      <img className="z-20 w-[28vw]" src={tertitimg}></img>
+      <div id="myinfodiv" className="z-10 -mt-2 flex flex-col justify-center items-center align-top w-[27.9vw] bg-black bg-opacity-40 backdrop-blur-lg p-3
        text-gray-300">
         <div className="flex flex-col items-left align-top">
           <h2 className="text-4xl">
@@ -161,10 +182,10 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="z-10 absolute text-left bottom-3 left-3 opacity-70 text-white">
+      <div className="z-10 fixed text-left bottom-3 left-3 opacity-70 text-white">
         <p>Make sure to disable any darkmode extension like Noir.</p>
       </div>
-      <div className="z-10 absolute text-left bottom-3 right-3 opacity-70 text-white">
+      <div className="z-10 fixed text-left bottom-3 right-3 opacity-70 text-white">
         <p>All copyright® rights reserved to Luca Montanari.</p>
       </div>
 
