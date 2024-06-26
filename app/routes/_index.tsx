@@ -9,6 +9,7 @@ import mypic1 from "../assets/mypic1.jpeg"
 import mypic2 from "../assets/mypic2.jpeg"
 import mypic3 from "../assets/mypic3.png"
 import backgroundImg2 from "../assets/mainPageBackground2.jpg"
+import mainGradientBackground from "../assets/mainGradientBackground.jpg"
 import mainPageTextClip from "../assets/mainPageTextClip.jpg"
 import separatorimg from "../assets/separatorimg.jpg"
 import macFrame from "../assets/mac-frame.png"
@@ -68,9 +69,9 @@ export default function Index() {
   });
 
   return (
-    <div style={{ width: "100%", height: "100%" }} className="fjc flex-col items-center align-top pt-24">
+    <div id="fulldiv" style={{ width: "100%", height: "100%" }} className="fjc flex-col items-center align-top pt-24 bg-black">
       <input type="text" className="absolute hidden" id="pageName" value={"home"} readOnly></input>
-      <img className="z-0 fixed top-0 h-[100vh] w-full" src={backgroundImg2}></img>
+      <img className="z-0 fixed top-0 h-[100vh] w-full opacity-80 blur-[1px]" src={backgroundImg2}></img>
       <div id="MobileAlert" className="absolute top-[75px] max-w-[90vw] text-yellow-400"><p>It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC.</p></div>
       <div id="middleHeading" className="z-10 bg-white bg-opacity-20 mt-5 fjc flex-row text-white w-[35vw] h-[55px] backdrop-blur-lg
       rounded-md text-center items-center align-middle">
