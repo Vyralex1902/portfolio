@@ -3,6 +3,11 @@ h3{
   font-size: medium;
 }
 
+h1{
+  font-weight: 700;
+  stroke: black;
+}
+
 #middleStory{
  border-radius: 0px 0px 30px 30px;
 }

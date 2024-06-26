@@ -7,6 +7,7 @@ import "../styles/home.css";
 import mypic2 from "../assets/mypic2.jpeg"
 import mypic3 from "../assets/mypic3.png"
 import backgroundImg1 from "../assets/mainPageBackground.jpg"
+import backgroundImg2 from "../assets/mainPageBackground2.jpg"
 import separatorimg from "../assets/separatorimg.jpg"
 import macFrame from "../assets/mac-frame.png"
 import tertitimg from "../assets/terminaltitle.png"
@@ -49,14 +50,14 @@ export default function Index() {
   return (
     <div style={{ width: "100%", height: "100%" }} className="fjc flex-col items-center align-top pt-24">
       <input type="text" className="absolute hidden" id="pageName" value={"home"} readOnly></input>
-      <img className="z-0 fixed top-0 h-[100vh] w-full" src={backgroundImg1}></img>
+      <img className="z-0 fixed top-0 h-[100vh] w-full" src={backgroundImg2}></img>
       {/* <img className="z-0 absolute w-[140vh] mt-[70px] opacity-75" src={macFrame}></img> */}
       <div id="topdiv" className="z-10 flex flex-col justify-center items-center">
         <h1 id="title" className="text-white animate-slideInFromTop">Luca's Portfolio</h1>
         <img id="profilepic1" className="w-24 h-24 rounded-full border-2 border-gray-600 animate-reveal"></img>
       </div>
-      <div id="middleHeading" className="z-10 bg-white bg-opacity-20 mt-5 flex flex-row text-white w-[50vw] h-[55px] backdrop-blur-lg border-1 border-gray-300
-      rounded-md text-center items-center justify-center align-middle">
+      <div id="middleHeading" className="z-10 bg-white bg-opacity-20 mt-5 fjc flex-row text-white w-[50vw] h-[55px] backdrop-blur-lg
+      rounded-md text-center items-center align-middle">
         <div className="flex flex-row gap-2 text-gray-600">
           <a href="/portfolio/programming">
             <h3 className="hover:text-green-700">Coding Knowledge</h3>
@@ -75,7 +76,7 @@ export default function Index() {
         <h2>I had started programming at the age of 13. I started with VB.NET, then I migrated to...</h2>
         <a href="/portfolio/mystory"><p className="underline text-blue-600">Continue reading</p></a>
       </div>
-      <div className="flex flex-row gap-8 mt-3">
+      <div className="flex flex-row gap-8 my-5">
         <div className='' id='downloadbtncontainer'>
           <div className='flex justify-center pt-2'>
             <div className='w-fit'>
@@ -126,10 +127,10 @@ export default function Index() {
           <span className="text-purple-400">Current Profession &gt;</span> Student
         </h2>
       </div>
-      <div id="freelancingSectionDiv" className="z-10 mt-28 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-white bg-opacity-10
+      <div id="freelancingSectionDiv" className="z-10 mt-28 mb-20 flex flex-col justify-center items-center align-top w-[30vw] bg-white bg-opacity-10
       backdrop-blur-md p-3 text-gray-300 rounded-lg">
         <div className="flex flex-col items-center align-top mb-6">
-          <h1 className="text-4xl text-green-400">
+          <h1 className="text-4xl text-[#2dc590]">
             Freelancing Services
           </h1>
         </div>
