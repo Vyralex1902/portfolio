@@ -13,6 +13,11 @@ import "./styles/global.css";
 import Heading from "./heading";
 
 export const links: LinksFunction = () => [
+  {
+    rel: "icon",
+    href: "favicon.ico",
+    type: "image/ico",
+  },
   { rel: "stylesheet", href: stylesheet },
 ];
 
