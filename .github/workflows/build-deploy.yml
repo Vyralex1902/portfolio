@@ -33,7 +33,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Build
         run: |
-          npm audit fix --force
           npm i
           npm run build
       - name: Setup Pages
@@ -41,7 +40,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './build/client'
+          path: "./build/client"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
