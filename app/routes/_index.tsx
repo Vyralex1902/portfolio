@@ -11,8 +11,6 @@ import mypic3 from "../assets/mypic3.png"
 import backgroundImg2 from "../assets/mainPageBackground2.jpg"
 import mainGradientBackground from "../assets/mainGradientBackground.jpg"
 import mainPageTextClip from "../assets/mainPageTextClip.jpg"
-import separatorimg from "../assets/separatorimg.jpg"
-import macFrame from "../assets/mac-frame.png"
 import tertitimg from "../assets/terminaltitle.png"
 
 import { FaYoutube, FaInstagram } from "react-icons/fa6";
