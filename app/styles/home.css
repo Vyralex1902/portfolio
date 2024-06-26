@@ -8,6 +8,21 @@ h1{
   stroke: black;
 }
 
+#gigatitle{
+  font-size: 100px;
+  font-weight: 600;
+  font-family: 'title';
+  background-image: url('../assets/mainPageTextClip.jpg');
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color:transparent;
+}
+
+#gigatitlesub {
+  font-family: 'title';
+}
+
 #middleStory{
  border-radius: 0px 0px 30px 30px;
 }
@@ -28,7 +43,7 @@ h1{
 }
 
 .downloadbtn_div button {
-  width: 130px;
+  width: 150px;
   height: 50px;
   background-color: rgba(255,255,255, 0.3);
   backdrop-filter: blur(10px);
