@@ -130,7 +130,7 @@ export default function Index() {
           <span className="text-purple-400">Current Profession &gt;</span> Student
         </h2>
       </div>
-      <div id="freelancingSectionDiv" className="z-10 mt-28 mb-20 flex flex-col justify-center items-center align-top w-[30vw] bg-white bg-opacity-10
+      <div id="freelancingSectionDiv" className="z-10 mt-10 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-white bg-opacity-10
       backdrop-blur-md p-3 text-gray-300 rounded-lg">
         <div className="flex flex-col items-center align-top mb-6">
           <h1 className="text-4xl text-[#2dc590]">
@@ -161,7 +161,12 @@ export default function Index() {
         </div>
       </div>
 
-
+      <div className="z-10 absolute text-left bottom-3 left-3 opacity-70 text-white">
+        <p>Make sure to disable any darkmode extension like Noir.</p>
+      </div>
+      <div className="z-10 absolute text-left bottom-3 right-3 opacity-70 text-white">
+        <p>All copyright® rights reserved to Luca Montanari.</p>
+      </div>
 
       <div id="bottomLinks" className="z-10 fixed bottom-0 flex flex-row text-center text-white bg-gray-700 bg-opacity-95 py-2 px-5">
         <div className="flex flex-row gap-2 align-midde text-white">

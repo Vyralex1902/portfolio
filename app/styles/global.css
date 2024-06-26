@@ -1,20 +1,21 @@
 @font-face {
-  font-family: 'RanchinoLight';
-  src: local('RanchinoLight'), url(../fonts/RanchinoScriptLight.otf) format('woff');
+  font-family: "RanchinoLight";
+  src: local("RanchinoLight"),
+    url(../fonts/RanchinoScriptLight.otf) format("woff");
 }
 @font-face {
-  font-family: 'title';
-  src: local('title'), url(../fonts/title.ttf) format('woff');
+  font-family: "title";
+  src: local("title"), url(../fonts/title.otf) format("woff");
 }
 
-#title{
+#title {
   font-size: 50px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 600;
 }
 
-#quote{
-  font-family: 'RanchinoLight';
+#quote {
+  font-family: "RanchinoLight";
   font-size: 80px;
   font-weight: 600;
 }

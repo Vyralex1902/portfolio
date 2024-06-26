@@ -1,37 +1,42 @@
-h3{
+h3 {
   text-decoration: underline;
   font-size: medium;
 }
 
-h1{
+h1 {
   font-weight: 700;
   stroke: black;
 }
 
-#gigatitle{
-  font-size: 100px;
+#gigatitle {
+  font-size: 4.5vw;
   font-weight: 600;
-  font-family: 'title';
-  background-image: url('../assets/mainPageTextClip.jpg');
+  font-family: "title";
+  background-image: url("../assets/mainPageTextClip.jpg");
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  color:transparent;
+  color: transparent;
 }
 
 #gigatitlesub {
-  font-family: 'title';
+  font-family: "title";
+  background-image: url("../assets/mainPageTextClip.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-#middleStory{
- border-radius: 0px 0px 30px 30px;
+#middleStory {
+  border-radius: 0px 0px 30px 30px;
 }
 
-#bottomLinks{
+#bottomLinks {
   border-radius: 10px 10px 0px 0px;
 }
 
-#myinfodiv{
+#myinfodiv {
   border-radius: 0px 0px 6px 6px;
 }
 
@@ -45,13 +50,13 @@ h1{
 .downloadbtn_div button {
   width: 150px;
   height: 50px;
-  background-color: rgba(255,255,255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
   font-size: 14px;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -59,8 +64,6 @@ h1{
   align-items: center;
   justify-content: center;
   border-radius: 7px;
-  border: 2px;
-  border-color: rgba(255, 255, 255, 1);
   margin-bottom: 8px;
 }
 
