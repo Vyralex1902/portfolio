@@ -131,7 +131,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-        <div className="fjc mt-3 mb-20 text-blue-300 underline text-lg"><a href="luca@lucasnode.com"><p>luca@lucasnode.com</p></a></div>
+        <div className="fjc mt-3 mb-20 text-blue-300 underline text-lg"><a href="mailto:luca@lucasnode.com"><p>luca@lucasnode.com</p></a></div>
       </div>
 
       <img className="z-20 w-[28vw]" src={tertitimg}></img>
