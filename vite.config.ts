@@ -6,6 +6,5 @@ import tsconfigPaths from "vite-tsconfig-paths";
 installGlobals();
 
 export default defineConfig({
-  base: '/portfolio/',
-  plugins: [remix({ basename: '/portfolio/', ssr:false}), tsconfigPaths()],
+  plugins: [remix({ ssr:false}), tsconfigPaths()],
 });
