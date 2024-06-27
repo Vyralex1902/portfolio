@@ -23,6 +23,8 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+//Home Page
+
 export default function Index() {
 
   useEffect(() => {
@@ -96,7 +98,7 @@ export default function Index() {
           <h1 id="gigatitle" className="text-white animate-slideInFromTop">LUCA MONTANARI</h1><p id="gigatitlesub" className="text-5xl text-white animate-slideInFromTop">'S</p>
         </div>
         <h1 className="text-5xl text-white -mt-5 mb-5">Portfolio</h1>
-        <div className="z-10 flex align-middle items-center gap-5 mb-20">
+        <div className="z-10 flex align-middle items-center gap-5">
           <div className='' id='downloadbtncontainer'>
             <div className='flex justify-center pt-2'>
               <div className='w-fit'>
@@ -129,6 +131,7 @@ export default function Index() {
             </div>
           </div>
         </div>
+        <div className="fjc mt-3 mb-20 text-blue-300 underline text-lg"><a href="luca@lucasnode.com"><p>luca@lucasnode.com</p></a></div>
       </div>
 
       <img className="z-20 w-[28vw]" src={tertitimg}></img>
