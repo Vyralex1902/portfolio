@@ -102,7 +102,7 @@ export default function Index() {
           <div className='' id='downloadbtncontainer'>
             <div className='flex justify-center pt-2'>
               <div className='w-fit'>
-                <a href='/portfolio/hireme'>
+                <a href='/hireme'>
                   <div className="downloadbtn_div">
                     <motion.button className="downloadbtn" whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.8 }}>
                       <div className='flex flex-col justify-center items-center'>
@@ -118,7 +118,7 @@ export default function Index() {
           <div className='' id='downloadbtncontainer'>
             <div className='flex justify-center pt-2'>
               <div className='w-fit'>
-                <a href='/portfolio/contactme'>
+                <a href='/contactme'>
                   <div className="downloadbtn_div">
                     <motion.button className="downloadbtn" whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.8 }}>
                       <div className='flex flex-col justify-center items-center'>
@@ -170,7 +170,7 @@ export default function Index() {
         <div className='mt-4' id='downloadbtncontainer'>
           <div className='flex justify-center pt-2'>
             <div className='w-fit'>
-              <a href='/portfolio/buyservice'>
+              <a href='/buyservice'>
                 <div className="downloadbtn_div">
                   <motion.button className="downloadbtn" whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.8 }}>
                     <div className='flex flex-col justify-center items-center'>
