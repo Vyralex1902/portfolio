@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 
 import "../styles/home.css";
@@ -76,22 +77,24 @@ export default function Index() {
       <div id="middleHeading" className="z-10 bg-white bg-opacity-20 mt-5 fjc flex-row text-white w-[35vw] h-[55px] backdrop-blur-lg
       rounded-md text-center items-center align-middle">
         <div className="flex flex-row gap-2 text-gray-600">
-          <a href="/portfolio/programming">
+          <Link to="programming" className="cursor-context-menu">
             <h3 className="hover:text-green-700">Coding Knowledge</h3>
-          </a>
+          </Link>
           <p>|</p>
-          <a href="/portfolio/hobbies">
+          <Link to="hobbies" className="cursor-context-menu">
             <h3 className="hover:text-green-700">Passions</h3>
-          </a>
+          </Link>
           <p>|</p>
-          <a href="/portfolio/mystory">
+          <Link to="mystory" className="cursor-context-menu">
             <h3 className="hover:text-green-700">My Story</h3>
-          </a>
+          </Link>
         </div>
       </div>
       <div id="middleStory" className="z-10 flex flex-col justify-center items-center align-top max-w-[25vw] bg-white bg-opacity-20 backdrop-blur-lg p-3 text-gray-600">
         <h2>I had started programming at the age of 13. I started with VB.NET, then I migrated to...</h2>
-        <a href="/portfolio/mystory"><p className="underline text-blue-600">Continue reading</p></a>
+        <Link to="mystory" className="cursor-context-menu">
+          <p className="underline text-blue-600">Continue reading</p>
+        </Link>
       </div>
       <div id="topdiv" className="z-10 flex flex-col items-center align-top">
         <div className="z-10 flex flex-row items-center align-top">
@@ -102,7 +105,7 @@ export default function Index() {
           <div className='' id='downloadbtncontainer'>
             <div className='flex justify-center pt-2'>
               <div className='w-fit'>
-                <a href='/hireme'>
+                <Link to="hireme" className="cursor-context-menu">
                   <div className="downloadbtn_div">
                     <motion.button className="downloadbtn" whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.8 }}>
                       <div className='flex flex-col justify-center items-center'>
@@ -110,7 +113,7 @@ export default function Index() {
                       </div>
                     </motion.button>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -118,7 +121,7 @@ export default function Index() {
           <div className='' id='downloadbtncontainer'>
             <div className='flex justify-center pt-2'>
               <div className='w-fit'>
-                <a href='/contactme'>
+                <Link to="contactme" className="cursor-context-menu">
                   <div className="downloadbtn_div">
                     <motion.button className="downloadbtn" whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.8 }}>
                       <div className='flex flex-col justify-center items-center'>
@@ -126,7 +129,7 @@ export default function Index() {
                       </div>
                     </motion.button>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -170,7 +173,7 @@ export default function Index() {
         <div className='mt-4' id='downloadbtncontainer'>
           <div className='flex justify-center pt-2'>
             <div className='w-fit'>
-              <a href='/buyservice'>
+              <Link to="buyservice" className="cursor-context-menu">
                 <div className="downloadbtn_div">
                   <motion.button className="downloadbtn" whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.8 }}>
                     <div className='flex flex-col justify-center items-center'>
@@ -178,7 +181,7 @@ export default function Index() {
                     </div>
                   </motion.button>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
