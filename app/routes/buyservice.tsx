@@ -19,7 +19,7 @@ export default function BuyAServicePage() {
         <div id="topdiv" className="z-10 flex flex-col justify-center items-center mb-10 mt-20">
           <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Buy a service</h1>
         </div>
-        <div id="sectionContainer" className="flex flex-col items-start h-[100vh]">
+        <div id="sectionContainer" className="flex flex-col items-start h-[100vh] mb-10">
           <iframe className="border-none w-[75vw] h-[75vh] rounded-lg" width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQWiKQhUNlVVSEUxR1VMMUIyMDQwV0U1QUpRQzIwSS4u&embed=true"> </iframe>
         </div>
       </div>
