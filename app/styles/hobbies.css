@@ -10,10 +10,19 @@ h2 {
   border-color: gray;
 }
 
-#sectionContainer{
+#sectionContainer {
   display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 200px);
-    grid-column-gap: 250px;
-    grid-row-gap: 0px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  grid-column-gap: 250px;
+  grid-row-gap: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+  #sectionContainer {
+    grid-column-gap: 30px;
+  }
+  #title {
+    font-size: 30px;
+  }
 }

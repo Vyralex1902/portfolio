@@ -124,7 +124,16 @@ h1 {
 }
 
 @media only screen and (max-width: 900px) {
-  #headingThing {
+  /* #headingThing {
     width: 90%;
+  } */
+  #profilepic1 {
+    visibility: hidden;
+  }
+  #ttl {
+    font-size: 50px;
+  }
+  #subttl {
+    font-size: 30px;
   }
 }

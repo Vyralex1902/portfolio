@@ -89,30 +89,8 @@ export default function Index() {
       <input type="text" className="absolute hidden" id="pageName" value={"home"} readOnly></input>
       {/* <img className="z-0 fixed top-0 h-[100vh] w-full opacity-[0.03] blur-[1px]" src={backgroundImg2}></img> */}
       <div id="MobileAlert" className="absolute top-[75px] max-w-[90vw] text-yellow-400"><p>It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC.</p></div>
-      {/* <div id="middleHeading" className="z-10 bg-white bg-opacity-20 mt-5 fjc flex-row text-white w-[35vw] h-[55px] backdrop-blur-lg
-      rounded-md text-center items-center align-middle">
-        <div className="flex flex-row gap-2 text-gray-600">
-          <Link to="programming" className="cursor-context-menu">
-            <h3 className="hover:text-green-700">Coding Knowledge</h3>
-          </Link>
-          <p>|</p>
-          <Link to="hobbies" className="cursor-context-menu">
-            <h3 className="hover:text-green-700">Passions</h3>
-          </Link>
-          <p>|</p>
-          <Link to="mystory" className="cursor-context-menu">
-            <h3 className="hover:text-green-700">My Story</h3>
-          </Link>
-        </div>
-      </div> */}
-      {/* <div id="middleStory" className="z-10 flex flex-col justify-center items-center align-top max-w-[25vw] bg-white bg-opacity-20 backdrop-blur-lg p-3 text-gray-600">
-        <h2>I had started programming at the age of 13. I started with VB.NET, then I migrated to...</h2>
-        <Link to="mystory" className="cursor-context-menu">
-          <p className="underline text-blue-600">Continue reading</p>
-        </Link>
-      </div> */}
       <div className="w-screen h-screen flex flex-col items-center mt-[20vh] -mb-[25vh]">
-        <div className="w-screen justify-center flex"><div className="z-10 flex flex-col items-left align-middle">
+        <div className="w-screen justify-center flex"><div id="ttldiv" className="z-10 flex flex-col items-left align-middle">
           <h1 id="ttl" className="text-white animate-slideInFromTop text-[90px] font-[Montserrat]">Welcome, I'm Luca</h1>
           <h2 id="subttl" className="bg-gradient-to-r from-blue-600 to-cyan-400 inline-block text-transparent bg-clip-text animate-slideInFromTopDelayed text-[50px] font-[Montserrat] ml-4">Web and App Developer</h2>
           <div className="flex gap-2 ml-5">
@@ -120,7 +98,6 @@ export default function Index() {
             <Link to="mystory" className="cursor-context-menu">
               <p className="underline text-purple-600 hover:text-purple-500">continue reading</p>
             </Link></div>
-
           <div className="z-10 flex justify-start gap-5 mt-5 ml-2">
             <div id='downloadbtncontainer'>
               <div className='flex justify-start pt-2'>
