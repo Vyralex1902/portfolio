@@ -114,7 +114,7 @@ export default function Index() {
       <div className="w-screen h-screen flex flex-col items-center mt-[20vh] -mb-[25vh]">
         <div className="w-screen justify-center flex"><div className="z-10 flex flex-col items-left align-middle">
           <h1 id="ttl" className="text-white animate-slideInFromTop text-[90px] font-[Montserrat]">Welcome, I'm Luca</h1>
-          <h2 id="subttl" className="text-blue-600 animate-slideInFromTopDelayed text-[50px] font-[Montserrat] ml-4">Web and App Developer</h2>
+          <h2 id="subttl" className="bg-gradient-to-r from-blue-600 to-cyan-400 inline-block text-transparent bg-clip-text animate-slideInFromTopDelayed text-[50px] font-[Montserrat] ml-4">Web and App Developer</h2>
           <div className="flex gap-2 ml-5">
             <h2 className="text-white">I had started programming at the age of 13. I started with VB.NET, then I migrated to...</h2>
             <Link to="mystory" className="cursor-context-menu">
@@ -160,23 +160,27 @@ export default function Index() {
         </div>
       </div>
 
-      <img id="terminalimg" className="z-10 w-[40vw]" src={tertitimg}></img>
-      <div id="myinfodiv" className="z-10 -mt-2 flex flex-col justify-center items-center align-top w-[39.8vw] bg-black bg-opacity-40 backdrop-blur-lg p-3
+      <motion.div initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.9 }}>
+        <img id="terminalimg" className="z-10 w-[40vw]" src={tertitimg}></img>
+        <div id="myinfodiv" className="z-10 -mt-2 flex flex-col justify-center items-center align-top w-[39.8vw] bg-black bg-opacity-40 backdrop-blur-lg p-3
        text-gray-300 shadow-xl">
-        <div className="flex flex-col items-left align-top">
-          <h2 className="text-4xl">
-            <span className="text-green-400">.age</span>&nbsp; <span className="text-purple-400">$&gt;</span> 18 years old
-            <br />
-            <span className="text-green-400">.loc</span> &nbsp;&nbsp;<span className="text-purple-400">$&gt;</span> Living in <span className="text-green-500">It</span><span className="text-white">a</span><span className="text-red-500">ly</span>
-            <br />
-            <span className="text-green-400">.lang</span> <span className="text-purple-400">$&gt;</span> Speaking en & it
-          </h2>
-          <h2 className="text-3xl mt-5">
-            <span className="text-purple-400">Current Profession &gt;</span> Student
-          </h2>
+          <div className="flex flex-col items-left align-top">
+            <h2 className="text-4xl">
+              <span className="text-green-400">.age</span>&nbsp; <span className="text-purple-400">$&gt;</span> 18 years old
+              <br />
+              <span className="text-green-400">.loc</span> &nbsp;&nbsp;<span className="text-purple-400">$&gt;</span> Living in <span className="text-green-500">It</span><span className="text-white">a</span><span className="text-red-500">ly</span>
+              <br />
+              <span className="text-green-400">.lang</span> <span className="text-purple-400">$&gt;</span> Speaking en & it
+            </h2>
+            <h2 className="text-3xl mt-5">
+              <span className="text-purple-400">Current Profession &gt;</span> Student
+            </h2>
+          </div>
         </div>
-      </div>
-      <div id="freelancingSectionDiv" className="z-10 mt-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-black bg-opacity-30
+      </motion.div>
+      <motion.div initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.9 }} id="freelancingSectionDiv" className="z-10 mt-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-black bg-opacity-30
       backdrop-blur-md p-3 text-gray-300 rounded-lg">
         <div className="flex flex-col items-center align-top mb-6">
           <h1 className="text-4xl text-[#2dc590]">
@@ -205,8 +209,9 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="freelancingSectionDiv" className="z-10 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-black bg-opacity-30
+      </motion.div>
+      <motion.div initial={{ opacity: 0.25 }}
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.9 }} id="freelancingSectionDiv" className="z-10 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-black bg-opacity-30
       backdrop-blur-md p-3 text-gray-300 rounded-lg">
         <div className="flex flex-col items-center align-top">
           <h1 className="text-4xl text-[#2dc590]">
@@ -229,7 +234,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div className="z-10 fixed text-left bottom-3 left-3 opacity-70 text-white">
         <p>Make sure to disable any darkmode extension like Noir.</p>

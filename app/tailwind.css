@@ -33,6 +33,6 @@
   }
   .homepagebtnlarger {
     @apply w-[220px] h-[55px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
-    font-bold hover:bg-blue-600 hover:text-[#081b29] text-lg font-[Montserrat] transition-all;
+    font-bold hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-400 hover:border-0 hover:text-[#081b29] text-lg font-[Montserrat] transition-all;
   }
 }
