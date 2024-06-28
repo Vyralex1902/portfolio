@@ -211,7 +211,7 @@ export default function Index() {
         </div>
       </motion.div>
       <motion.div initial={{ opacity: 0.25 }}
-        whileInView={{ opacity: 1 }} viewport={{ amount: 0.9 }} id="freelancingSectionDiv" className="z-10 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-black bg-opacity-30
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.9 }} id="freelancingSectionDiv" className="z-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-black bg-opacity-30
       backdrop-blur-md p-3 text-gray-300 rounded-lg">
         <div className="flex flex-col items-center align-top">
           <h1 className="text-4xl text-[#2dc590]">
@@ -233,6 +233,28 @@ export default function Index() {
               </Link>
             </div>
           </div>
+        </div>
+      </motion.div>
+
+
+      <motion.div initial={{ opacity: 0.25 }}
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.9 }} id="freelancingSectionDiv" className="z-10 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-black bg-opacity-30
+      backdrop-blur-md p-3 text-gray-300 rounded-lg">
+        <div className="flex flex-col items-center align-top">
+          <h1 className="text-4xl text-[#2dc590]">
+            My Tech
+          </h1>
+          <p className="mt-5 max-w-[30vw] font-[RanchinoLight] text-3xl">My everyday tech right now</p>
+        </div>
+        <div className="flex justify-center flex-col">
+          <p>
+            <span className="text-purple-400">~</span> iPhone 15 Pro Max
+            <br /><span className="text-purple-400">~</span> AirPods Pro 1
+            <br /><span className="text-purple-400">~</span> Apple Watch SE 2
+            <br /><span className="text-purple-400">~</span> MacBook Air M3 15'
+            <br /><span className="text-purple-400">~</span> Apple Magic Mouse
+            <br /><span className="text-purple-400">~</span> Windows Desktop PC (<Link to="pcspecs" className="cursor-context-menu"><span className="text-purple-600 hover:text-purple-500">specs</span></Link>)
+          </p>
         </div>
       </motion.div>
 
