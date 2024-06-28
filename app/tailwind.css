@@ -23,7 +23,16 @@
     @apply bg-white dark:bg-[#1E1E1E];
   }
 
-  .fjc{
-    @apply flex justify-center
+  .fjc {
+    @apply flex justify-center;
+  }
+
+  .homepagebtn {
+    @apply w-[150px] h-[52px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
+    font-bold hover:bg-blue-600 hover:text-[#081b29] text-lg font-[Montserrat] transition-all;
+  }
+  .homepagebtnlarger {
+    @apply w-[220px] h-[55px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
+    font-bold hover:bg-blue-600 hover:text-[#081b29] text-lg font-[Montserrat] transition-all;
   }
 }

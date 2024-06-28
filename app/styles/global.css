@@ -1,3 +1,27 @@
+body {
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #081b299c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #55555591;
+}
+
 @font-face {
   font-family: "RanchinoLight";
   src: local("RanchinoLight"),
@@ -22,4 +46,10 @@
 
 #glitchText {
   font-family: "Space Mono", monospace;
+}
+
+#scroll-anim {
+  animation: slideFromLeft ease-in;
+  animation-timeline: view();
+  animation-range-end: 35%;
 }
