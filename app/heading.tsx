@@ -97,6 +97,27 @@ const Heading = () => {
       headingIconElement4!.classList.add("heading-icon");
     }
 
+    if (
+      document.getElementById("pageName")?.getAttribute('value') == "buyservice"
+      || document.getElementById("pageName")?.getAttribute('value') == "home"
+      || document.getElementById("pageName")?.getAttribute('value') == "mystory"
+      || document.getElementById("pageName")?.getAttribute('value') == "hireme"
+    ) {
+      if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        }
+
+        // if NOT set via local storage previously
+      } else {
+        if (document.documentElement.classList.contains('light')) {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        }
+      }
+    }
+
     console.log("Heading loaded.");
   });
 
