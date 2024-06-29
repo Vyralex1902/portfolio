@@ -1,5 +1,5 @@
 #headingThing {
-  width: 40%;
+  width: 30%;
 }
 
 .heading-icon-selected {
@@ -9,6 +9,27 @@
 
 @media only screen and (max-width: 900px) {
   #headingThing {
-    width: 90%;
+    width: 90vw;
+    min-width: 100vw;
+  }
+  #headingThing #headingIcon1 {
+    width: 15vw;
+    height: 4vh;
+    font-size: 9px;
+  }
+  #headingThing #headingIcon2 {
+    width: 15vw;
+    height: 4vh;
+    font-size: 9px;
+  }
+  #headingThing #headingIcon3 {
+    width: 15vw;
+    height: 4vh;
+    font-size: 9px;
+  }
+  #headingThing #headingIcon4 {
+    width: 15vw;
+    height: 4vh;
+    font-size: 9px;
   }
 }

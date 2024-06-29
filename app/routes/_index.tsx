@@ -86,7 +86,7 @@ export default function Index() {
   });
 
   return (
-    <div id="fulldiv" style={{ width: "100vw", height: "100%" }} className="fjc flex-col items-center align-top pt-24 bg-[#081b29]">
+    <div id="fulldiv" style={{ width: "100vw", height: "100%" }} className="fjc flex-col items-center align-top pt-24 bg-[rgba(14,16,17,1)]">
       <input type="text" className="absolute hidden" id="pageName" value={"home"} readOnly></input>
       {/* <img className="z-0 fixed top-0 h-[100vh] w-full opacity-[0.03] blur-[1px]" src={backgroundImg2}></img> */}
       <div id="MobileAlert" className="absolute top-[75px] max-w-[90vw] text-yellow-400"><p>It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC.</p></div>
@@ -135,12 +135,12 @@ export default function Index() {
           <div className="flex justify-start mt-5 ml-3 text-lg text-left"><a href="mailto:luca@lucasnode.com">
             <p className="text-gray-400 underline hover:text-purple-600">luca@lucasnode.com</p></a></div>
         </div>
-          <img id="profilepic1" className="w-[22vw] animate-revealmainimg opacity-[0.2] hover:opacity-[0.5] transition-all" src={MyMainPic}></img>
+          <img id="profilepic1" className="w-[400px] h-[400px] animate-revealmainimg opacity-[0.2] hover:opacity-[0.5] transition-all" src={MyMainPic}></img>
         </div>
       </div>
 
       <motion.div initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }} viewport={{ amount: 0.9 }}>
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }}>
         <img id="terminalimg" className="z-10 w-[40vw]" src={tertitimg}></img>
         <div id="myinfodiv" className="z-10 -mt-2 flex flex-col justify-center items-center align-top w-[39.8vw] bg-black bg-opacity-40 backdrop-blur-lg p-3
        text-gray-300 shadow-xl">
