@@ -64,7 +64,7 @@ export default function Index() {
     console.log("Page loaded.");
 
     if (window.innerWidth < 900) {
-      alert_user('info', 'Hey!', "It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC. If you use your mobile device you will miss out on many cool animations and effects, plus, the interface is very bad.");
+      alert_user('info', 'Hey!', "It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC. If you use your mobile device you will miss out on many cool animations and effects.");
       document.getElementById("MobileAlert")?.classList.remove("hidden");
     }
     else {
