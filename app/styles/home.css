@@ -181,4 +181,7 @@ h1 {
     min-width: 80vw;
     min-height: 30;
   }
+  #bottomText {
+    visibility: hidden;
+  }
 }

@@ -14,9 +14,9 @@ export default function HobbiesPage() {
   });
 
   return (
-    <div className="flex flex-col align-top bg-white dark:bg-[#1E1E1E]">
+    <div className="flex flex-col align-top darkmode-bg">
       <input type="text" className="absolute hidden" id="pageName" value={"mystory"} readOnly></input>
-      <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top bg-white dark:bg-[#1E1E1E] text-white">
+      <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top darkmode-bg text-white">
         <div id="topdiv" className="z-10 flex flex-col align-top items-center mt-20">
           <h1 id="title" className="text-white animate-slideInFromTop">Luca's Story</h1>
           <h3 id="subtitle" className="text-sky-600">How I started programming</h3>

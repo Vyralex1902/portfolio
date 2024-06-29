@@ -12,7 +12,7 @@ export default function PCSpecsPage() {
   return (
     <div className="flex flex-col align-top bg-white dark:bg-[#1E1E1E]">
       <input type="text" className="absolute hidden" id="pageName" value={"pcspecs"} readOnly></input>
-      <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top bg-white dark:bg-[#1E1E1E] text-white">
+      <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top darkmode-bg text-white">
         <div id="topdiv" className="z-10 flex flex-col align-top items-center mt-20">
           <h1 id="title" className="text-white animate-slideInFromTop">My Desktop PC's Specs</h1>
         </div>

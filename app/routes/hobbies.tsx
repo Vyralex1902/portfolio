@@ -17,7 +17,7 @@ export default function HobbiesPage() {
   return (
     <div className="flex flex-col align-top">
       <input type="text" className="absolute hidden" id="pageName" value={"hobbies"} readOnly></input>
-      <div style={{ width: "100%", height: "100%" }} className="flex flex-col justify-center items-center align-top bg-white dark:bg-[#1E1E1E]
+      <div style={{ width: "100%", height: "100%" }} className="flex flex-col justify-center items-center align-top darkmode-bg
        text-black dark:text-white">
         <div id="topdiv" className="z-10 flex flex-col justify-center items-center mt-20">
           <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Luca's Free Time Activities & Main Passions</h1>

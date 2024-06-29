@@ -13,7 +13,7 @@ export default function DonatePage() {
   return (
     <div className="flex flex-col align-top darkmode-bg" style={{ width: "100vw", height: "100vh" }}>
       <input type="text" className="absolute hidden" id="pageName" value={"donate"} readOnly></input>
-      <div style={{ width: "100%", height: "auto" }} className="flex flex-col items-center align-top bg-white dark:bg-[#1E1E1E] text-white">
+      <div style={{ width: "100%", height: "auto" }} className="flex flex-col items-center align-top darkmode-bg text-white">
         <div id="topdiv" className="z-10 flex flex-col align-top items-center mt-20">
           <h1 id="title" className="text-gray-500 animate-slideInFromTop">Donate to Luca</h1>
         </div>

@@ -242,10 +242,10 @@ export default function Index() {
         </div>
       </motion.div>
 
-      <div className="z-10 fixed text-left bottom-3 left-3 opacity-70 text-white">
+      <div id="bottomText" className="z-10 fixed text-left bottom-3 left-3 opacity-70 text-white">
         <p>Make sure to disable any darkmode extension like Noir.</p>
       </div>
-      <div className="z-10 fixed text-left bottom-3 right-3 opacity-70 text-white">
+      <div id="bottomText" className="z-10 fixed text-left bottom-3 right-3 opacity-70 text-white">
         <p>All copyright® rights reserved to Luca Montanari.</p>
       </div>
 
