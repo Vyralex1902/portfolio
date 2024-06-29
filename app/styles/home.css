@@ -7,14 +7,6 @@ h1 {
   font-weight: 700;
 }
 
-#fulldiv {
-  /* background: linear-gradient(
-    120deg,
-    rgb(206, 0, 31) 0%,
-    rgb(133, 135, 6) 100%
-  ); */
-}
-
 @keyframes reveal {
   0% {
     opacity: 0;
@@ -25,7 +17,35 @@ h1 {
 }
 
 #subttl {
-  transition-delay: 1s;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.05em; /* Adjust as needed */
+  animation: typing 7s infinite, words 12s infinite;
+  border-right: 0;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  80% {
+    width: 100%;
+  }
+}
+@keyframes words {
+  0%,
+  33% {
+    content: "Frontend Designer";
+  }
+  34%,
+  70% {
+    content: "Web and App Developer";
+  }
+  71%,
+  100% {
+    content: "Tech enthusiast";
+  }
 }
 
 #profilepic1 {
@@ -33,13 +53,14 @@ h1 {
   transition-timing-function: linear;
 }
 
-/* #freelancingSectionDiv,
+#freelancingSectionDiv,
 #terminalimg,
 #myinfodiv {
-  animation: reveal ease-in;
+  /* animation: reveal ease-in;
   animation-timeline: view();
-  animation-range-end: 15%;
-} */
+  animation-range-end: 15%; */
+  min-width: 600px;
+}
 
 #gigatitle {
   font-size: 4.5vw;
@@ -135,5 +156,11 @@ h1 {
   }
   #subttl {
     font-size: 30px;
+  }
+  #freelancingSectionDiv,
+  #terminalimg,
+  #myinfodiv {
+    min-width: 80vw;
+    min-height: 30;
   }
 }

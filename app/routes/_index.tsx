@@ -10,6 +10,7 @@ import mypic1 from "../assets/mypic1.jpeg"
 import mypic2 from "../assets/mypic2.jpeg"
 import mypic3 from "../assets/mypic3.png"
 import mypic3noback from "../assets/mypic3noback.png"
+import MyMainPic from "../assets/mypic2noback.png"
 import backgroundImg2 from "../assets/mainPageBackground2.jpg"
 import mainGradientBackground from "../assets/mainGradientBackground.jpg"
 import mainPageTextClip from "../assets/mainPageTextClip.jpg"
@@ -92,11 +93,12 @@ export default function Index() {
       <div className="w-screen h-screen flex flex-col items-center mt-[20vh] -mb-[25vh]">
         <div className="w-screen justify-center flex"><div id="ttldiv" className="z-10 flex flex-col items-left align-middle">
           <h1 id="ttl" className="text-white animate-slideInFromTop text-[90px] font-[Montserrat]">Welcome, I'm Luca</h1>
-          <h2 id="subttl" className="bg-gradient-to-r from-blue-600 to-cyan-400 inline-block text-transparent bg-clip-text animate-slideInFromTopDelayed text-[50px] font-[Montserrat] ml-4">Web and App Developer</h2>
-          <div className="flex gap-2 ml-5">
-            <h2 className="text-white">I had started programming at the age of 13. I started with VB.NET, then I migrated to...</h2>
+          <h2 id="subttl" className="ml-1 bg-gradient-to-r from-blue-600 to-cyan-400 inline-block text-transparent bg-clip-text text-[50px] font-[Montserrat]">Web and App Developer</h2>
+          <h2 className="ml-2 mb-5 text-cyan-700 text-[20px] font-[Montserrat]">Building websites and apps  for startups and individuals with <span className="underline">creativity</span> in mind.</h2>
+          <div className="flex gap-2">
+            <p className="text-white font-[Montserrat] ml-2">A thriving life starts from the ground up and rises steadily...</p>
             <Link to="mystory" className="cursor-context-menu">
-              <p className="underline text-purple-600 hover:text-purple-500">continue reading</p>
+              <p className="underline text-purple-600 hover:text-purple-500">read my story</p>
             </Link></div>
           <div className="z-10 flex justify-start gap-5 mt-5 ml-2">
             <div id='downloadbtncontainer'>
@@ -130,10 +132,10 @@ export default function Index() {
               </div>
             </div>
           </div>
-          <div className="flex justify-start mt-5 ml-3 underline text-lg text-left"><a href="mailto:luca@lucasnode.com">
-            <p className="text-gray-400 hover:text-purple-600">luca@lucasnode.com</p></a></div>
+          <div className="flex justify-start mt-5 ml-3 text-lg text-left"><a href="mailto:luca@lucasnode.com">
+            <p className="text-gray-400 underline hover:text-purple-600">luca@lucasnode.com</p></a></div>
         </div>
-          <img id="profilepic1" className="w-[15vw] h-[15vw] animate-revealmainimg opacity-[0.2] hover:opacity-[0.5] transition-all" src={mypic3noback}></img>
+          <img id="profilepic1" className="w-[22vw] animate-revealmainimg opacity-[0.2] hover:opacity-[0.5] transition-all" src={MyMainPic}></img>
         </div>
       </div>
 
@@ -221,7 +223,7 @@ export default function Index() {
           <h1 className="text-4xl text-[#2dc590]">
             My Tech
           </h1>
-          <p className="mt-5 max-w-[30vw] font-[RanchinoLight] text-3xl">My everyday tech right now</p>
+          <p className="mt-5 mb-3 max-w-[30vw] font-[RanchinoLight] text-3xl">My everyday tech right now</p>
         </div>
         <div className="flex justify-center flex-col">
           <p>

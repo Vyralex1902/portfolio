@@ -2,6 +2,11 @@
   width: 40%;
 }
 
+.heading-icon-selected {
+  /* border-radius: 8px; */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
 @media only screen and (max-width: 900px) {
   #headingThing {
     width: 90%;
