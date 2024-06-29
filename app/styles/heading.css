@@ -12,6 +12,12 @@
     width: 90vw;
     min-width: 100vw;
   }
+  #headingThing #picbtn {
+    margin-left: 4px;
+  }
+  #headingThing #themeToggle {
+    margin-right: 4px;
+  }
   #headingThing #headingIcon1 {
     width: 15vw;
     height: 4vh;
