@@ -79,9 +79,21 @@ h1 {
   animation-range-end: 15%; */
   min-width: 600px;
 }
-#freelancingSectionDiv {
-  border: 1px;
-  border-color: rgba(200, 200, 200, 0.5);
+#freelancingSectionDiv,
+#myinfodiv {
+  border: 1px solid;
+  border-color: rgba(200, 200, 200, 0.1);
+}
+#freelancingSectionDiv::hover,
+#myinfodiv::hover {
+  box-shadow: 0 0 15px rgba(120, 0, 108, 0.3);
+}
+
+#freelancingSectionDiv h1,
+h2,
+#myinfodiv h1,
+h2 {
+  pointer-events: none;
 }
 
 #gigatitle {

@@ -147,7 +147,7 @@ export default function Index() {
       <motion.div initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }}>
         <img id="terminalimg" className="z-10 w-[40vw]" src={tertitimg}></img>
-        <div id="myinfodiv" className="z-10 -mt-2 flex flex-col justify-center items-center align-top w-[39.8vw] bg-[rgba(24,26,27,0.5)] backdrop-blur-lg p-3
+        <div id="myinfodiv" className="z-10 -mt-2 flex flex-col justify-center items-center align-top w-[39.8vw] bg-[rgba(24,26,27,0.5)] p-3
        text-gray-300 shadow-xl">
           <div className="flex flex-col items-left align-top">
             <h2 className="text-4xl">
