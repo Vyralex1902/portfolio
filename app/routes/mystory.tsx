@@ -10,6 +10,8 @@ import "../styles/global.css";
 export default function HobbiesPage() {
 
   useEffect(() => {
+
+
     console.log("Page loaded.");
   });
 
@@ -22,7 +24,7 @@ export default function HobbiesPage() {
           <h3 id="subtitle" className="text-sky-600">How I started programming</h3>
         </div>
         <div className="z-10 bg-[rgba(14,16,17,1)] flex flex-col align-top items-center max-w-[70vw]">
-          <p className="text-white text-xl">
+          <p id="typedtext" className="text-white text-xl">
             It all started in <span className="text-blue-500">January 2016</span> when I was 9 years old. I began to develop an interest in coding. Initially, I watched YouTube videos about programming and coding. Since my English skills were quite poor, I primarily watched Italian videos. These videos provided me with a general overview of what coding was and the challenges involved in learning it. At first, I thought, "Okay, this is hard. Let's just wait and add it to my future schedule.”<br /><br />
             At the <span className="text-blue-500">age of 13</span>, I began learning my first programming language: VB.NET. After grasping the basics of this language, I decided to enhance my skills by learning C#, a more advanced high-level programming language primarily used for creating applications with the Microsoft .NET Framework. I dedicated about four years to learning and practicing C# before expanding my skill set with additional programming languages. I knew from the start that programming would be my future career.<br /><br />
             I have always been passionate about technology, especially software. For me, programming is the next level of loving tech because it involves creating it. While it's not hardware, software is crucial for any smart technology. Being a programmer opens up countless opportunities, from full-stack web development to PLC programming. The limitless possibilities are one of the things I love most about programming.<br /><br />

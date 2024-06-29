@@ -89,12 +89,12 @@ export default function Index() {
   return (
     <div id="fulldiv" style={{ width: "100vw", height: "100%" }} className="fjc flex-col items-center align-top pt-24 bg-[rgba(14,16,17,1)]">
       <input type="text" className="absolute hidden" id="pageName" value={"home"} readOnly></input>
-      {/* <img className="z-0 fixed top-0 h-[100vh] w-full opacity-[0.03] blur-[1px]" src={backgroundImg2}></img> */}
       <div id="MobileAlert" className="absolute top-[75px] max-w-[90vw] text-yellow-400"><p>It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC.</p></div>
       <div className="w-screen h-screen flex flex-col items-center mt-[20vh]">
         <div className="w-screen justify-center flex"><div id="ttldiv" className="z-10 flex flex-col items-left align-middle">
-          <h1 id="ttl" className="text-white animate-slideInFromTop text-[90px] font-[Montserrat]">Welcome, I'm Luca</h1>
-          <h2 id="subttl" className="ml-1 bg-gradient-to-r from-blue-600 to-cyan-400 inline-block text-transparent bg-clip-text text-[50px] font-[Montserrat]">Web and App Developer</h2>
+          <h1 id="ttl" className="text-white animate-slideInFromTop text-[90px] font-[Montserrat]">Hey, I'm Luca!</h1>
+          <h2 id="subttl" className="ml-1 bg-gradient-to-r from-blue-600 to-cyan-400 inline-block text-transparent bg-clip-text text-[50px] 
+          font-[Montserrat]" data-type='[ "Web and App Developer.", "Front-end developer.", "Tech enthusiast." ]'></h2>
           <h2 className="ml-2 mb-5 text-cyan-700 text-[20px] font-[Montserrat]">Building websites and apps  for startups and individuals with <span className="underline">creativity</span> in mind.</h2>
           <div className="flex gap-2">
             <p className="text-white font-[Montserrat] ml-2">A thriving life starts from the ground up and rises steadily...</p>
@@ -164,7 +164,7 @@ export default function Index() {
         </div>
       </motion.div>
       <motion.div initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }} viewport={{ amount: 0.9 }} id="freelancingSectionDiv" className="z-10 mt-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mt-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
       backdrop-blur-md p-3 text-gray-300 rounded-lg">
         <div className="flex flex-col items-center align-top mb-6">
           <h1 className="text-4xl text-[#2dc590]">
@@ -195,7 +195,7 @@ export default function Index() {
         </div>
       </motion.div>
       <motion.div initial={{ opacity: 0.25 }}
-        whileInView={{ opacity: 1 }} viewport={{ amount: 0.9 }} id="freelancingSectionDiv" className="z-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
       backdrop-blur-md p-3 text-gray-300 rounded-lg">
         <div className="flex flex-col items-center align-top">
           <h1 className="text-4xl text-[#2dc590]">
@@ -222,7 +222,7 @@ export default function Index() {
 
 
       <motion.div initial={{ opacity: 0.25 }}
-        whileInView={{ opacity: 1 }} viewport={{ amount: 0.9 }} id="freelancingSectionDiv" className="z-10 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
       backdrop-blur-md p-3 text-gray-300 rounded-lg">
         <div className="flex flex-col items-center align-top">
           <h1 className="text-4xl text-[#2dc590]">

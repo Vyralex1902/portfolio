@@ -19,8 +19,11 @@ h1 {
 #subttl {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
-  animation: typing 7s infinite, words 12s infinite;
+  animation: typing 7s infinite;
   font-weight: 600;
+}
+#subttl::before {
+  animation: wordss 21s infinite;
 }
 
 #arrowimg {
@@ -51,16 +54,16 @@ h1 {
     width: 100%;
   }
 }
-@keyframes words {
+@keyframes wordss {
   0%,
   33% {
-    content: "Frontend Designer";
-  }
-  34%,
-  70% {
     content: "Web and App Developer";
   }
-  71%,
+  34%,
+  67% {
+    content: "Frontend Developer";
+  }
+  68%,
   100% {
     content: "Tech enthusiast";
   }
