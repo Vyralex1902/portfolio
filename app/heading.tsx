@@ -122,7 +122,7 @@ const Heading = () => {
   });
 
   return (
-    <div className="fixed top-0 flex flex-row pt-1 pb-1 z-50 justify-center w-screen h-[75px]">
+    <div className="fixed top-0 flex flex-row pt-1 pb-1 z-50 justify-center w-screen h-[75px] cursor-pointer">
       <div id="headingThing" className="min-w-[700px] backdrop-blur-lg border-gray-500 border-opacity-20 border-[1.5px] flex w-fit justify-center py-2 rounded-lg items-center bg-[rgba(16,18,19,0.8)]">
         <motion.button id="picbtn" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} onClick={togglePicture} className="ml-5 w-14 h-14 align-middle flex justify-center rounded-full animate-reveal absolute left-0 top-[5px]">
           <img id="profilepic" className=" w-14 h-14 align-middle rounded-full animate-reveal"></img></motion.button>
@@ -145,7 +145,7 @@ const Heading = () => {
 };
 
 const HeadingIcon = ({ id, text = 'Text', link }: { id: string, text: string, link: any }) => (
-  <Link to={link} className="cursor-context-menu">
+  <Link to={link} className="cursor-pointer">
     <div id={id} className="heading-icon group z-50 cursor-context-menu font-[Arial] text-[15px]">
       {text}
     </div>

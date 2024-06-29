@@ -1,9 +1,14 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 
 import "../styles/programming.css";
 import "../styles/global.css";
+
+import arrowsvg from "../assets/arrow.svg"
+
 
 export default function Programming() {
 
@@ -43,6 +48,24 @@ export default function Programming() {
             <p>
               <span className="text-purple-400">&gt;</span> Python
             </p>
+          </div>
+
+          <div id='downloadbtncontainer' className="mt-[10vh]">
+            <div className='flex justify-start pt-2'>
+              <div className='w-fit'>
+                <Link to="myprojects" className="cursor-context-menu">
+                  <div className="downloadbtn_div">
+                    <motion.button className="w-[250px] h-[52px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
+    font-bold hover:bg-blue-600 hover:text-[#081b29] text-lg font-[Montserrat] transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
+                      <div className='flex justify-center items-center'>
+                        <p className="-ml-5">Explore my projects</p>
+                        <img id="arrowimg1" src={arrowsvg}></img>
+                      </div>
+                    </motion.button>
+                  </div>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
         <div className="relative bottom-6">
