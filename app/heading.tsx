@@ -131,10 +131,6 @@ const Heading = () => {
           <HeadingIcon id="headingIcon2" text="Development" link="/programming" ></HeadingIcon>
           <HeadingIcon id="headingIcon3" text="Passions" link="/hobbies" ></HeadingIcon>
           <HeadingIcon id="headingIcon4" text="My Story" link="/mystory" ></HeadingIcon>
-          {/* <HeadingIcon icon={<FaHome style={{ width: "50%", height: "50%", color: "white" }} />} text="Home" link="/" ></HeadingIcon>
-          <HeadingIcon icon={<IoCodeSlashOutline style={{ width: "50%", height: "50%", color: "white" }} />} text="Coding Knowledge" link="/programming" ></HeadingIcon>
-          <HeadingIcon icon={<TbGymnastics style={{ width: "50%", height: "50%", color: "white" }} />} text="Passions" link="/hobbies" ></HeadingIcon>
-          <HeadingIcon icon={<FaHistory style={{ width: "50%", height: "50%", color: "white" }} />} text="My Story" link="/mystory" ></HeadingIcon> */}
         </div>
         <div id="themeToggle" className="border-2 border-white border-opacity-20 w-12 h-12 rounded-3xl bg-black bg-opacity-35 hover:bg-opacity-50
           dark:bg-white dark:bg-opacity-20 justify-center align-middle flex items-center absolute right-0 mr-5">
@@ -146,7 +142,7 @@ const Heading = () => {
 
 const HeadingIcon = ({ id, text = 'Text', link }: { id: string, text: string, link: any }) => (
   <Link to={link} className="cursor-pointer">
-    <div id={id} className="heading-icon group z-50 cursor-context-menu font-[Arial] text-[15px]">
+    <div id={id} className="heading-icon group z-50 cursor-context-menu text-[15px]">
       {text}
     </div>
   </Link>
