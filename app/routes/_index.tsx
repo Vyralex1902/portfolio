@@ -22,8 +22,8 @@ import { RxDividerVertical } from "react-icons/rx";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Luca's Portfolio" },
-    { name: "Luca's Portfolio", content: "Welcome to Luca's Portfolio!" },
+    { title: "Luca Montanari's Portfolio" },
+    { name: "Luca Montanari's Portfolio", content: "Welcome to Luca's Portfolio!" },
   ];
 };
 

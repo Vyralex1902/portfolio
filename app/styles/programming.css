@@ -41,7 +41,3 @@ p {
   margin-left: 6px;
   width: 23px;
 }
-
-#arrowimg1::hover {
-  transform: translateX(20px);
-}
