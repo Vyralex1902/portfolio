@@ -23,7 +23,7 @@
   }
 
   .darkmode-bg {
-    @apply bg-white bg-[rgba(14,16,17,1)];
+    @apply bg-white dark:bg-[rgba(14,16,17,1)];
   }
 
   .fjc {
