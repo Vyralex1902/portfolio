@@ -49,7 +49,6 @@ export default function Programming() {
               <span className="text-purple-400">&gt;</span> Python
             </p>
           </div>
-
           <div id='downloadbtncontainer' className="mt-[10vh]">
             <div className='flex justify-start pt-2'>
               <div className='w-fit'>
