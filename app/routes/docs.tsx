@@ -107,7 +107,7 @@ function GlowCards({ }) {
             <div className="card-info-wrapper">
               <div className="card-info">
                 <div className="card-info-title">
-                  <h3>C# Basic course</h3>
+                  <h3>Quick search algorithm</h3>
                   <h4>July 2024</h4>
                 </div>
               </div>

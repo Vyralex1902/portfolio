@@ -49,20 +49,37 @@ export default function Programming() {
               <span className="text-purple-400">&gt;</span> Python
             </p>
           </div>
-          <div id='downloadbtncontainer' className="mt-[10vh]">
-            <div className='flex justify-start pt-2'>
-              <div className='w-fit'>
-                <Link to="myprojects" className="cursor-context-menu" >
-                  <div className="downloadbtn_div">
-                    <motion.button id="btnlink" className="w-[250px] h-[52px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
-    font-bold hover:bg-blue-600 hover:text-[#081b29] text-lg font-[Montserrat] transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
-                      <div className='flex justify-center items-center'>
-                        <p className="-ml-5">Explore my projects</p>
-                        <img id="arrowimg1" src={arrowsvg}></img>
-                      </div>
-                    </motion.button>
-                  </div>
-                </Link>
+          <div className="mt-[10vh] flex gap-5">
+            <div id='downloadbtncontainer'>
+              <div className='flex justify-start pt-2'>
+                <div className='w-fit'>
+                  <Link to="myprojects" className="cursor-context-menu" >
+                    <div className="downloadbtn_div">
+                      <motion.button id="btnlink" className="w-[250px] h-[52px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
+                         font-bold hover:bg-blue-600 hover:text-[#081b29] text-lg font-[Montserrat] transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
+                        <div className='flex justify-center items-center'>
+                          <p className="-ml-5">Explore my projects</p>
+                          <img id="arrowimg1" src={arrowsvg}></img>
+                        </div>
+                      </motion.button>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div id='downloadbtncontainer'>
+              <div className='flex justify-center pt-2'>
+                <div className='w-fit'>
+                  <Link to="docs" className="cursor-context-menu">
+                    <div className="downloadbtn_div">
+                      <motion.button className="homepagebtnlarger" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
+                        <div className='flex flex-col justify-left -ml-5'>
+                          <p>Learn from the docs</p>
+                        </div>
+                      </motion.button>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

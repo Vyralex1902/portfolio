@@ -142,7 +142,7 @@ const Heading = () => {
 
 const HeadingIcon = ({ id, text = 'Text', link }: { id: string, text: string, link: any }) => (
   <Link to={link} className="cursor-pointer">
-    <div id={id} className="heading-icon group z-50 cursor-context-menu text-[15px] text-black dark:text-white">
+    <div id={id} className="heading-icon group z-50 cursor-context-menu text-[15px]">
       {text}
     </div>
   </Link>
