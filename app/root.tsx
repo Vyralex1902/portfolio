@@ -1,6 +1,7 @@
 import {
   Links,
   Meta,
+  MetaFunction,
   Outlet,
   Scripts,
   ScrollRestoration,
@@ -11,6 +12,13 @@ import type { LoaderFunction } from "@remix-run/node";
 import stylesheet from "~/tailwind.css?url";
 import "./styles/global.css";
 import Heading from "./heading";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Luca Montanari's Portfolio" },
+    { name: "Luca Montanari's Portfolio", content: "Welcome to Luca's Portfolio!" },
+  ];
+};
 
 export const links: LinksFunction = () => [
   {

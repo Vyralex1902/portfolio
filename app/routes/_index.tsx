@@ -219,8 +219,6 @@ export default function Index() {
           </div>
         </div>
       </motion.div>
-
-
       <motion.div initial={{ opacity: 0.25 }}
         whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
       backdrop-blur-md p-3 text-gray-300 rounded-lg">
@@ -239,6 +237,31 @@ export default function Index() {
             <br /><span className="text-purple-400">~</span> Apple Magic Mouse
             <br /><span className="text-purple-400">~</span> Windows Desktop PC (<Link to="pcspecs" className="cursor-context-menu"><span className="text-purple-600 hover:text-purple-500">specs</span></Link>)
           </p>
+        </div>
+      </motion.div>
+
+      <motion.div initial={{ opacity: 0.25 }}
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
+      backdrop-blur-md p-3 text-gray-300 rounded-lg">
+        <div className="flex flex-col items-center align-top">
+          <h1 className="text-4xl text-[#2dc590]">
+            My Documentations
+          </h1>
+        </div>
+        <div className='mt-4' id='downloadbtncontainer'>
+          <div className='flex justify-center pt-2'>
+            <div className='w-fit'>
+              <Link to="docs" className="cursor-context-menu">
+                <div className="downloadbtn_div">
+                  <motion.button className="homepagebtnlarger" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
+                    <div className='flex flex-col justify-center items-center'>
+                      <p>See the docs</p>
+                    </div>
+                  </motion.button>
+                </div>
+              </Link>
+            </div>
+          </div>
         </div>
       </motion.div>
 
