@@ -8,3 +8,22 @@ h2 {
   font-size: 30px;
   font-weight: 600;
 }
+
+#arrowimg {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(197deg)
+    brightness(107%) contrast(101%);
+  rotate: 180deg;
+  animation: bouncyarrow 3s infinite;
+}
+
+@keyframes bouncyarrow {
+  10% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40vh);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
