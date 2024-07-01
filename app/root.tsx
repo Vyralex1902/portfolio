@@ -45,6 +45,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <Heading></Heading>
         {children}
+        <SpeedInsights />
         <ScrollRestoration />
         <Scripts />
       </body>
