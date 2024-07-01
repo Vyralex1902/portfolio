@@ -12,7 +12,6 @@ import { Analytics } from "@vercel/analytics/react"
 import stylesheet from "~/tailwind.css?url";
 import "./styles/global.css";
 import Heading from "./heading";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const meta: MetaFunction = () => {
   return [
@@ -46,7 +45,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Heading></Heading>
         {children}
         <Analytics />
-        <SpeedInsights></SpeedInsights>
         <ScrollRestoration />
         <Scripts />
       </body>
