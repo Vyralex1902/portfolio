@@ -243,15 +243,15 @@ export default function Index() {
 
       <div id="bottomLinks" className="z-10 fixed bottom-0 flex flex-row text-center text-white bg-gray-700 backdrop-blur-md bg-opacity-80 py-2 px-5">
         <div className="flex flex-row gap-2 align-midde text-white">
-          <a href="https://is.gd/VuJcew" className="mt-[5px]">
+          <a href="https://is.gd/VuJcew" target="_blank" className="mt-[5px]">
             <FaYoutube className="h-8 w-8 hover:text-green-500" />
           </a>
           <RxDividerVertical className="w-8 h-8 mt-1" />
-          <a href="https://is.gd/flpzrg" className="mt-[5px]">
+          <a href="https://is.gd/flpzrg" target="_blank" className="mt-[5px]">
             <FaInstagram className="w-8 h-8 hover:text-green-500" />
           </a>
           <RxDividerVertical className="w-8 h-8 mt-1" />
-          <a href="http://www.fiverr.com/s/Ld4NB40" className="mt-[5px]">
+          <a href="http://www.fiverr.com/s/Ld4NB40" target="_blank" className="mt-[5px]">
             <TbBrandFiverr className="w-8 h-8 hover:text-green-500" />
           </a>
         </div>
