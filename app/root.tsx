@@ -8,11 +8,11 @@ import {
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 import type { LoaderFunction } from "@remix-run/node";
-import { SpeedInsights } from "@vercel/speed-insights/remix"
-
+import { Analytics } from "@vercel/analytics/react"
 import stylesheet from "~/tailwind.css?url";
 import "./styles/global.css";
 import Heading from "./heading";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const meta: MetaFunction = () => {
   return [
@@ -45,7 +45,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <Heading></Heading>
         {children}
-        <SpeedInsights />
+        <Analytics />
+        <SpeedInsights></SpeedInsights>
         <ScrollRestoration />
         <Scripts />
       </body>
