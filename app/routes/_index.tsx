@@ -19,6 +19,7 @@ import tertitimg from "../assets/terminaltitle.png"
 
 import { FaYoutube, FaInstagram } from "react-icons/fa6";
 import { RxDividerVertical } from "react-icons/rx";
+import { TbBrandFiverr } from "react-icons/tb";
 
 export const meta: MetaFunction = () => {
   return [
@@ -271,6 +272,10 @@ export default function Index() {
           <RxDividerVertical className="w-8 h-8 mt-1" />
           <a href="https://is.gd/flpzrg" className="mt-[5px]">
             <FaInstagram className="w-8 h-8 hover:text-green-500" />
+          </a>
+          <RxDividerVertical className="w-8 h-8 mt-1" />
+          <a href="http://www.fiverr.com/s/Ld4NB40" className="mt-[5px]">
+            <TbBrandFiverr className="w-8 h-8 hover:text-green-500" />
           </a>
         </div>
       </div>
