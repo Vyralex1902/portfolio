@@ -16,6 +16,7 @@ import mypic1 from "./assets/mypic1.jpeg"
 import mypic2 from "./assets/mypic2.jpeg"
 import mypic3 from "./assets/mypic3.png"
 import pill from "./assets/Pill.png"
+import Swal from "sweetalert2";
 
 var switchableTheme = true;
 var currentPictureIndex = 0;
@@ -34,7 +35,6 @@ const Heading = () => {
     }
 
     const headingIconElement1 = document.getElementById("headingIcon1");
-    const headingIconElement2 = document.getElementById("headingIcon2");
     const headingIconElement3 = document.getElementById("headingIcon3");
     const headingIconElement4 = document.getElementById("headingIcon4");
 
@@ -42,19 +42,6 @@ const Heading = () => {
       headingIconElement1!.classList.remove("heading-icon");
       headingIconElement1!.classList.add("heading-icon-selected");
 
-      headingIconElement2!.classList.remove("heading-icon-selected");
-      headingIconElement2!.classList.add("heading-icon");
-      headingIconElement3!.classList.remove("heading-icon-selected");
-      headingIconElement3!.classList.add("heading-icon");
-      headingIconElement4!.classList.remove("heading-icon-selected");
-      headingIconElement4!.classList.add("heading-icon");
-    }
-    headingIconElement2!.onclick = (e) => {
-      headingIconElement2!.classList.remove("heading-icon");
-      headingIconElement2!.classList.add("heading-icon-selected");
-
-      headingIconElement1!.classList.remove("heading-icon-selected");
-      headingIconElement1!.classList.add("heading-icon");
       headingIconElement3!.classList.remove("heading-icon-selected");
       headingIconElement3!.classList.add("heading-icon");
       headingIconElement4!.classList.remove("heading-icon-selected");
@@ -66,8 +53,6 @@ const Heading = () => {
 
       headingIconElement1!.classList.remove("heading-icon-selected");
       headingIconElement1!.classList.add("heading-icon");
-      headingIconElement2!.classList.remove("heading-icon-selected");
-      headingIconElement2!.classList.add("heading-icon");
       headingIconElement4!.classList.remove("heading-icon-selected");
       headingIconElement4!.classList.add("heading-icon");
     }
@@ -77,8 +62,6 @@ const Heading = () => {
 
       headingIconElement1!.classList.remove("heading-icon-selected");
       headingIconElement1!.classList.add("heading-icon");
-      headingIconElement2!.classList.remove("heading-icon-selected");
-      headingIconElement2!.classList.add("heading-icon");
       headingIconElement3!.classList.remove("heading-icon-selected");
       headingIconElement3!.classList.add("heading-icon");
     }
@@ -89,8 +72,6 @@ const Heading = () => {
       headingIconElement1!.classList.remove("heading-icon");
       headingIconElement1!.classList.add("heading-icon-selected");
 
-      headingIconElement2!.classList.remove("heading-icon-selected");
-      headingIconElement2!.classList.add("heading-icon");
       headingIconElement3!.classList.remove("heading-icon-selected");
       headingIconElement3!.classList.add("heading-icon");
       headingIconElement4!.classList.remove("heading-icon-selected");
@@ -128,7 +109,7 @@ const Heading = () => {
           <img id="profilepic" className=" w-14 h-14 align-middle rounded-full animate-reveal"></img></motion.button>
         <div className="flex w-fit justify-center absolute justify-self-center gap-2" style={{ width: "50%" }}>
           <HeadingIcon id="headingIcon1" text="Home" link="/" ></HeadingIcon>
-          <HeadingIcon id="headingIcon2" text="Development" link="/programming" ></HeadingIcon>
+          <DevelopmentHeadingIcon />
           <HeadingIcon id="headingIcon3" text="Passions" link="/hobbies" ></HeadingIcon>
           <HeadingIcon id="headingIcon4" text="My Story" link="/mystory" ></HeadingIcon>
         </div>
@@ -142,10 +123,29 @@ const Heading = () => {
 
 const HeadingIcon = ({ id, text = 'Text', link }: { id: string, text: string, link: any }) => (
   <Link to={link} className="cursor-pointer">
-    <div id={id} className="heading-icon group z-50 cursor-context-menu text-[15px]">
+    <div id={id} className="heading-icon group z-50 text-[15px]">
       {text}
     </div>
   </Link>
+);
+
+const DevelopmentHeadingIcon = () => (
+  <div>
+    <div id="headingIcon2" className="heading-icon group z-50 text-[15px] cursor-pointer">
+      Development
+      <div className="absolute" id="dropdown-content">
+        <Link to="programming" className="cursor-pointer">
+          <p id="di1" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">My Knowledge</p>
+        </Link>
+        <Link to="docs" className="cursor-pointer">
+          <p id="di2" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">My Docs</p>
+        </Link>
+        <Link to="myprojects" className="cursor-pointer">
+          <p id="di3" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">My Projects</p>
+        </Link>
+      </div>
+    </div>
+  </div>
 );
 
 const togglePicture = () => {
@@ -201,7 +201,8 @@ const toggleTheme = () => {
     console.log("Theme toggled.");
   }
   else {
-    alert("Sorry, you can't switch to dark theme on this page. I locked it either because it only looks good in light mode or because these is no need to switch it.");
+
+    Swal.fire("Can't do that", "Sorry, you can't switch to dark theme on this page. I locked it either because it only looks good in light mode or because these is no need to switch it.", "warning");
   }
 }
 export default Heading;

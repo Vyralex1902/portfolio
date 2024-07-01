@@ -52,19 +52,10 @@ export default function Index() {
       document.documentElement.classList.remove('dark');
     }
 
-    const alert_user = (i: any, t1: any, t2: any) => {
-      Swal.fire({
-        icon: i,
-        title: t1,
-        text: t2,
-        customClass: 'swal',
-      })
-    }
-
     console.log("Page loaded.");
 
     if (window.innerWidth < 900) {
-      alert_user('info', 'Hey!', "It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC. If you use your mobile device you will miss out on many cool animations and effects.");
+      Swal.fire('Hey!', "It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC. If you use your mobile device you will miss out on many cool animations and effects.", 'info');
       document.getElementById("MobileAlert")?.classList.remove("hidden");
     }
     else {

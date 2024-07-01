@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from 'react';
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
