@@ -8,6 +8,7 @@ import {
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 import type { LoaderFunction } from "@remix-run/node";
+import { SpeedInsights } from "@vercel/speed-insights/remix"
 
 import stylesheet from "~/tailwind.css?url";
 import "./styles/global.css";
