@@ -33,15 +33,6 @@ export const meta: MetaFunction = () => {
 export default function Index() {
 
   useEffect(() => {
-    // const ppic = document.getElementById("profilepic1");
-    // if (ppic) {
-    //   const rnd = Math.floor(Math.random() * 3);
-    //   switch (rnd) {
-    //     case 0: ppic.setAttribute('src', mypic2); break;
-    //     case 1: ppic.setAttribute('src', mypic3); break;
-    //     case 2: ppic.setAttribute('src', mypic1); break;
-    //   }
-    // }
     if (
       localStorage.getItem('color-theme') === 'dark' ||
       (!('color-theme' in localStorage) &&
@@ -62,20 +53,6 @@ export default function Index() {
     else {
       document.getElementById("MobileAlert")?.classList.add("hidden");
     }
-
-    //const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-    //   document.getElementById("glitchText")!.onmouseover = event => {
-    //     setInterval(() => {
-    //       document.getElementById("glitchText")!.innerText.split('')
-    //         .map((letter, index) => {
-    //           if (index < 1) {
-    //             return document.getElementById("glitchText")!.getAttribute('value');
-    //           }
-    //                   .map(letter => letters[Math.floor(Math.random() * 26)]).join('');
-    //         })
-    //     }, 30);
-    //   }
   });
 
   return (
