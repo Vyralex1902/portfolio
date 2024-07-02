@@ -4,7 +4,7 @@
 
 @layer components {
   .heading-icon {
-    @apply relative flex items-center justify-center h-[40px] w-[120px] my-auto hover:bg-gray-200 hover:dark:text-black bg-transparent text-black dark:text-white rounded-3xl hover:rounded-2xl transition-all;
+    @apply relative flex items-center justify-center h-[40px] w-[120px] my-auto hover:bg-gray-200 hover:dark:text-black bg-transparent text-black dark:text-white rounded-3xl transition-all;
   }
   .heading-icon-selected {
     @apply relative flex items-center justify-center h-[40px] w-[120px] my-auto bg-white bg-opacity-5 text-white font-semibold rounded-3xl transition-all;
