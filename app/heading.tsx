@@ -35,6 +35,7 @@ const Heading = () => {
     }
 
     const headingIconElement1 = document.getElementById("headingIcon1");
+    const headingIconElement2 = document.getElementById("headingIcon2");
     const headingIconElement3 = document.getElementById("headingIcon3");
     const headingIconElement4 = document.getElementById("headingIcon4");
 
@@ -46,6 +47,8 @@ const Heading = () => {
       headingIconElement3!.classList.add("heading-icon");
       headingIconElement4!.classList.remove("heading-icon-selected");
       headingIconElement4!.classList.add("heading-icon");
+      headingIconElement2!.classList.remove("heading-icon-selected");
+      headingIconElement2!.classList.add("heading-icon");
     }
     headingIconElement3!.onclick = (e) => {
       headingIconElement3!.classList.remove("heading-icon");
@@ -55,6 +58,8 @@ const Heading = () => {
       headingIconElement1!.classList.add("heading-icon");
       headingIconElement4!.classList.remove("heading-icon-selected");
       headingIconElement4!.classList.add("heading-icon");
+      headingIconElement2!.classList.remove("heading-icon-selected");
+      headingIconElement2!.classList.add("heading-icon");
     }
     headingIconElement4!.onclick = (e) => {
       headingIconElement4!.classList.remove("heading-icon");
@@ -64,6 +69,8 @@ const Heading = () => {
       headingIconElement1!.classList.add("heading-icon");
       headingIconElement3!.classList.remove("heading-icon-selected");
       headingIconElement3!.classList.add("heading-icon");
+      headingIconElement2!.classList.remove("heading-icon-selected");
+      headingIconElement2!.classList.add("heading-icon");
     }
 
     if (

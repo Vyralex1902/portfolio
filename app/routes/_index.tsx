@@ -64,7 +64,7 @@ export default function Index() {
           <h1 id="ttl" className="text-white animate-slideInFromTop text-[90px] font-[Montserrat]">Hey, I'm Luca!</h1>
           <h2 id="subttl" className="ml-1 bg-gradient-to-r from-blue-600 to-cyan-400 inline-block text-transparent bg-clip-text text-[50px] 
           font-[Montserrat]" data-type='[ "Web and App Developer.", "Front-end developer.", "Tech enthusiast." ]'></h2>
-          <h2 className="ml-2 mb-5 text-cyan-700 text-[20px] font-[Montserrat]">Building websites and apps  for startups and individuals with <span className="underline">creativity</span> in mind.</h2>
+          <h2 className="ml-2 mb-5 bg-gradient-to-r from-green-400 to-cyan-400 inline-block text-transparent bg-clip-text text-[20px] font-[Montserrat]">Building websites and apps  for startups and individuals with creativity in mind.</h2>
           <div className="flex gap-2">
             <p className="text-white font-[Montserrat] ml-2">A thriving life starts from the ground up and rises steadily...</p>
             <Link to="mystory" className="cursor-context-menu">

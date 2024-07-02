@@ -13,11 +13,11 @@ h2 {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(197deg)
     brightness(107%) contrast(101%);
   rotate: 180deg;
-  animation: bouncyarrow 3s infinite;
+  animation: bouncyarrow 5s infinite;
 }
 
 @keyframes bouncyarrow {
-  10% {
+  20% {
     transform: translateY(0px);
   }
   50% {
