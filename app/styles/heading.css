@@ -34,19 +34,9 @@
 }
 
 #di1 {
-  border-top: 1px;
-  border-left: 1px;
-  border-right: 1px;
   border-radius: 10px 10px 0px 0px;
 }
-#di2 {
-  border-left: 1px;
-  border-right: 1px;
-}
 #di3 {
-  border-bottom: 1px;
-  border-left: 1px;
-  border-right: 1px;
   border-radius: 0 0 10px 10px;
 }
 

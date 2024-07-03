@@ -22,7 +22,7 @@ export default function HobbiesPage() {
       <div style={{ width: "100%", height: "100vh" }} className="bg-[rgba(14,16,17,1)] fixed z-0"></div>
       <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top bg-[rgba(14,16,17,1)] text-white">
         <div id="topdiv" className="z-10 flex flex-col align-top items-center mt-20 mb-[20vh]">
-          <h1 id="title" className="text-white animate-slideInFromTop">Luca's Story</h1>
+          <h1 id="title" className="text-white animate-slideInFromTop">Luca's Story & Advices</h1>
           <h3 id="subtitle" className="text-sky-600">How I started programming</h3>
         </div>
         <div className="z-10 bg-[rgba(14,16,17,1)] flex flex-col align-top items-center max-w-[70vw]  p-5">
@@ -79,6 +79,19 @@ export default function HobbiesPage() {
           <h3 id="subtitle" className="text-sky-600">Chapter six - Trying to be productive</h3>
           <p id="typedtext" className="text-white text-xl mb-[35vh]">
             <br /><br />Anyway, for some time now, I've been fascinated by the idea that you can do anything if you focus on one thing at a time. I also love the saying that to be more productive, you need to split your problems into more, but smaller, problems. However, I haven't been able to apply these techniques yet. I think that if I did apply them, I would almost <span className="text-red-500">2x</span> my current productivity, maybe even more. Yet, I've found it difficult to apply them because I'm almost always out of ideas. That is pretty much the main reason why I am trying to be a freelancer as a side hustle. If somebody gives me a task to complete and provides me with ideas, I would be more determined and ready to complete them. So, if you are a company or an individual interested in hiring a frontend or app developer, I'm here.
+          </p>
+        </div>
+        <motion.div initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} className="flex justify-center mb-[45vh]">
+          <img id="arrowimg" src={arrowsvg} className="text-white w-20 h-20"></img>
+        </motion.div>
+        <div className="z-10 bg-[rgba(14,16,17,1)] flex flex-col align-top items-center max-w-[70vw] p-5">
+          <h3 id="subtitle" className="text-sky-600">Chapter seven - My learning advices</h3>
+          <p id="typedtext" className="text-white text-xl mb-[35vh]">
+            <br /><br />
+            My whole learning process was 90% based on practice.
+            I wouldn't necessarily recommend it, because I feel like it's a very personal decision to go for a practice- or theory-based learning process. So, if you would like to start coding just do what you feel, or even try both. Most of the time, the best is found in the middle.
+            The most important advice tho, in my opinion, is to not code for too long in one go. Try to distribute the work time, otherwise you will get overwhelmed and learning will become much more difficult.
           </p>
         </div>
       </div>

@@ -189,7 +189,7 @@ export default function Index() {
         </div>
       </motion.div>
       <motion.div initial={{ opacity: 0.25 }}
-        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
       backdrop-blur-md p-3 text-gray-300 rounded-lg">
         <div className="flex flex-col items-center align-top">
           <h1 className="text-4xl text-[#2dc590]">
@@ -210,7 +210,7 @@ export default function Index() {
       </motion.div>
 
       <motion.div initial={{ opacity: 0.25 }}
-        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
       backdrop-blur-md p-3 text-gray-300 rounded-lg">
         <div className="flex flex-col items-center align-top">
           <h1 className="text-4xl text-[#2dc590]">
@@ -231,6 +231,24 @@ export default function Index() {
               </Link>
             </div>
           </div>
+        </div>
+      </motion.div>
+      <motion.div initial={{ opacity: 0.25 }}
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
+      backdrop-blur-md p-3 text-gray-300 rounded-lg">
+        <div className="flex flex-col items-center align-top">
+          <h1 className="text-4xl text-[#2dc590]">
+            Coding Environment
+          </h1>
+          <p className="mt-5 mb-3 max-w-[30vw] font-[RanchinoLight] text-3xl">My coding environment and tools</p>
+        </div>
+        <div className="flex justify-center flex-col">
+          <p>
+            <span className="text-purple-400">IDE ~</span> VSCode (also used to make this website)
+            <br /><span className="text-purple-400">Terminal ~</span> MacOS Terminal
+            <br /><span className="text-purple-400">JS Framework ~</span> Remix | React
+            <br /><span className="text-purple-400">PC Framework ~</span> .NET Framework and SwiftUI
+          </p>
         </div>
       </motion.div>
 
