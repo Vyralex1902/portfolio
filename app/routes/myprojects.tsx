@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import arrowsvg from "../assets/arrow.svg"
 import csimg from "../assets/Coming Soon FHD.png"
+import prjimg1 from "../assets/myAdskoHeroDesign.svg"
 
 import "../styles/myprojects.css";
 import "../styles/global.css";
@@ -57,17 +58,17 @@ export default function MyProjectsPage() {
           <p>This only includes project from june 2024 to present</p>
         </div>
         <div id="cards1" className="mb-[40vh]">
-          <div className="card1">
+          <div className="card1" onClick={() => { window.location.href = 'https://lucasnode.com/myproject_adskohero' }}>
             <div className="card1-content">
               <div className="card1-image">
-                <img src={csimg}></img>
+                <img src={prjimg1}></img>
               </div>
               <div className="card1-info-wrapper">
                 <div className="card1-info">
                   <div className="card1-info-title">
                     <h3>Enterprise sample landing page</h3>
                     <h5>July 2024 | ? Hours</h5>
-                    <h4>A simple landing page made for an enterprise.</h4>
+                    <h4>A simple landing page made for an enterprise called Adsko.</h4>
                   </div>
                 </div>
               </div>
