@@ -14,8 +14,7 @@ p {
   width: 1000px;
   align-self: center;
   justify-content: center;
-  margin: 0px;
-  overflow: hidden;
+  margin: 0;
   padding: 0px;
   border-radius: 15px;
 }
@@ -140,7 +139,7 @@ span {
   font-family: "Nunito Sans", sans-serif;
 }
 
-/* @media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   #cards {
     margin-top: calc(200px * 4);
     max-width: 100vw;
@@ -150,22 +149,21 @@ span {
     grid-row-gap: 8px;
   }
 
-  #card-body {
-    height: calc(650px / 3);
-    width: calc(1000px / 3);
+  #searchBox {
+    width: 60vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #cards {
+    margin-top: calc(200px * 6 + 50px);
+    max-width: 100vw;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
   }
 
   #searchBox {
     width: 60vw;
   }
 }
-
-@media only screen and (max-width: 500px) {
-  #cards {
-    max-width: 100vw;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-column-gap: 4px;
-    grid-row-gap: 4px;
-  }
-} */

@@ -3,10 +3,8 @@
 }
 
 .heading-icon-selected {
-  /* border-radius: 8px; */
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-
-  text-shadow: 0 0 8px #31c48d;
+  text-shadow: 0 0 8px hsl(158, 60%, 48%);
 }
 
 #headingIcon1,

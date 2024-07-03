@@ -73,7 +73,7 @@ export default function DocsPage() {
     <div className="flex flex-col align-top">
       <input type="text" className="absolute hidden" id="pageName" value={"docs"} readOnly></input>
       <div style={{ width: "100%", height: "100vh" }} className="darkmode-bg fixed z-0"></div>
-      <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top darkmode-bg
+      <div style={{ width: "100%", height: "100%" }} className="flex flex-col items-center align-top darkmode-bg
        text-black dark:text-white">
         <div id="topdiv" className="z-10 flex flex-col justify-center items-center mb-10 mt-20 text-black dark:text-white">
           <h1 id="title" className="text-black dark:text-white animate-slideInFromTop">Luca's Docs</h1>
@@ -159,6 +159,18 @@ function GlowCards({ }) {
               <div className="card-info">
                 <div className="card-info-title">
                   <h3>Quicksorting algorithm</h3>
+                  <h4>July 2024</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="card" onClick={() => { window.location.href = 'https://lucasnode.com/docs' }}>
+          <div className="card-content">
+            <div className="card-info-wrapper">
+              <div className="card-info">
+                <div className="card-info-title">
+                  <h3>Progressive element targeting with JS/TS</h3>
                   <h4>July 2024</h4>
                 </div>
               </div>

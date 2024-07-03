@@ -27,21 +27,19 @@ export default function MyProjectsPage() {
     headingIconElement4!.classList.remove("heading-icon-selected");
     headingIconElement4!.classList.add("heading-icon");
 
-    const cards2Element = document.getElementById("cards2");
-    if (cards2Element) {
-      cards2Element.onmousemove = e => {
-        for (const card of document.getElementsByClassName("card2")) {
-          const rect = card.getBoundingClientRect(),
-            x = e.clientX - rect.left,
-            y = e.clientY - rect.top;
-          // const xPerc = x / rect.width;
-          // const yPerc = y / rect.height;
-          // const rx = (xPerc - 0.5) * 20;
-          // const ry = (yPerc - 0.5) * 20;
-          card.setAttribute("style", "--mouse-x: " + x + "px; --mouse-y:" + y + "px;"
-            // + "--rotate-deg-x: " + rx + "deg; --rotate-deg-y:" + ry + "deg;"
-          );
-        };
+    for (let i = 1; i <= 2; i++) {
+      const cardsElement = document.getElementById("cards" + i);
+      console.log("cards" + i);
+      if (cardsElement) {
+        cardsElement.onmousemove = e => {
+          for (const card of document.getElementsByClassName("card" + i)) {
+            const rect = card.getBoundingClientRect(),
+              x = e.clientX - rect.left,
+              y = e.clientY - rect.top;
+            card.setAttribute("style", "--mouse-x: " + x + "px; --mouse-y:" + y + "px;"
+            );
+          };
+        }
       }
     }
 
@@ -58,15 +56,15 @@ export default function MyProjectsPage() {
           <h3 id="subtitle" className="text-sky-600">My projects and case studies</h3>
           <p>This only includes project from june 2024 to present</p>
         </div>
-        <div id="cards2" className="mb-[40vh]">
-          <div className="card2">
-            <div className="card2-content">
-              <div className="card2-image">
+        <div id="cards1" className="mb-[40vh]">
+          <div className="card1">
+            <div className="card1-content">
+              <div className="card1-image">
                 <img src={csimg}></img>
               </div>
-              <div className="card2-info-wrapper">
-                <div className="card2-info">
-                  <div className="card2-info-title">
+              <div className="card1-info-wrapper">
+                <div className="card1-info">
+                  <div className="card1-info-title">
                     <h3>Enterprise sample landing page</h3>
                     <h5>July 2024 | ? Hours</h5>
                     <h4>A simple landing page made for an enterprise.</h4>
@@ -87,7 +85,7 @@ export default function MyProjectsPage() {
                   <div className="card2-info-title">
                     <h3>Searching algorithm</h3>
                     <h5>July 2024 | ? Hours</h5>
-                    <h4>A page that integrates my custom searching algorithm.</h4>
+                    <h4>My custom searching algorithm.</h4>
                   </div>
                 </div>
               </div>
