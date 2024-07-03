@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 
 import hero from "../assets/myAdskoHeroDesign.svg"
+import desc from "../assets/myAdskoDesciptionDesign.svg"
 import hero_overlay from "../assets/Prj1_Hero_Overlay.png"
 
 import "../styles/myproject_adskohero.css";
@@ -40,7 +41,7 @@ export default function AdskoProjectPage() {
           <h3 id="subtitle" className="text-sky-600">ADSKO Landing Page</h3>
           <p>Hero section, Description, Differenciating points</p>
         </div>
-        <div className="z-10 bg-[rgba(14,16,17,1)] flex flex-col align-top items-center max-w-[70vw]">
+        <div className="z-10 bg-[rgba(14,16,17,1)] flex flex-col align-top items-center max-w-[70vw] mb-10">
           <h3 className="text-[#00FFC2] font-[Montserrat] text-3xl">Hero Section</h3>
           <p id="imgoverlaystate">Click on the image | Overlay OFF</p>
           <div className="flex justify-center">
@@ -55,6 +56,10 @@ export default function AdskoProjectPage() {
                 document.getElementById("imgoverlaystate")!.innerText = "Click on the image | Overlay OFF";
               }}></img>
           </div>
+        </div>
+        <div className="z-10 bg-[rgba(14,16,17,1)] flex flex-col align-top items-center max-w-[70vw] mb-10">
+          <h3 className="text-[#00FFC2] font-[Montserrat] text-3xl">Desciption Section</h3>
+          <img id="descimg" src={desc} className="rounded-[16px] w-[70vw] h-auto"></img>
         </div>
       </div>
     </div>
