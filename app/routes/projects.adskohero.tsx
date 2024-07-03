@@ -3,10 +3,11 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 
-import prjimg1 from ".../assets/myAdskoHeroDesign.svg"
+import hero from "../assets/myAdskoHeroDesign.svg"
+import hero_overlay from "../assets/Prj1_Hero_Overlay.png"
 
-import ".../styles/myproject_adskohero.css";
-import ".../styles/global.css";
+import "../styles/myproject_adskohero.css";
+import "../styles/global.css";
 
 export default function AdskoProjectPage() {
 
@@ -34,12 +35,27 @@ export default function AdskoProjectPage() {
       <input type="text" className="absolute hidden" id="pageName" value={"myproject_1"} readOnly></input>
       <div style={{ width: "100%", height: "100vh" }} className="bg-[rgba(14,16,17,1)] fixed z-0"></div>
       <div style={{ width: "100%", height: "100%" }} className="flex flex-col items-center align-top bg-[rgba(14,16,17,1)] text-white">
-        <div id="topdiv" className="z-10 flex flex-col align-top items-center mt-20 mb-[20vh]">
+        <div id="topdiv" className="z-10 flex flex-col align-top items-center mt-20 mb-10">
           <h1 id="title" className="text-white animate-slideInFromTop">Luca's Projects - #1</h1>
           <h3 id="subtitle" className="text-sky-600">ADSKO Landing Page</h3>
           <p>Hero section, Description, Differenciating points</p>
         </div>
-
+        <div className="z-10 bg-[rgba(14,16,17,1)] flex flex-col align-top items-center max-w-[70vw]">
+          <h3 className="text-[#00FFC2] font-[Montserrat] text-3xl">Hero Section</h3>
+          <p id="imgoverlaystate">Click on the image | Overlay OFF</p>
+          <div className="flex justify-center">
+            <img id="heroimg" src={hero} className="rounded-[16px] w-[70vw] h-auto"
+              onClick={() => {
+                document.getElementById("hero_overlay_img")?.classList.remove("hidden");
+                document.getElementById("imgoverlaystate")!.innerText = "Click on the image | Overlay ON";
+              }}></img>
+            <img id="hero_overlay_img" src={hero_overlay} className="rounded-[16px] z-10 hidden absolute w-[70vw] h-auto"
+              onClick={() => {
+                document.getElementById("hero_overlay_img")?.classList.add("hidden");
+                document.getElementById("imgoverlaystate")!.innerText = "Click on the image | Overlay OFF";
+              }}></img>
+          </div>
+        </div>
       </div>
     </div>
   );

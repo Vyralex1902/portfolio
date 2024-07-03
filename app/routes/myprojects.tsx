@@ -9,6 +9,7 @@ import prjimg1 from "../assets/myAdskoHeroDesign.svg"
 
 import "../styles/myprojects.css";
 import "../styles/global.css";
+import { Link } from "@remix-run/react";
 
 export default function MyProjectsPage() {
 
@@ -57,42 +58,46 @@ export default function MyProjectsPage() {
           <h3 id="subtitle" className="text-sky-600">My projects and case studies</h3>
           <p>This only includes project from june 2024 to present</p>
         </div>
-        <div id="cards1" className="mb-[40vh]">
-          <div className="card1" onClick={() => { window.location.href = 'https://lucasnode.com/myproject_adskohero' }}>
-            <div className="card1-content">
-              <div className="card1-image">
-                <img src={prjimg1}></img>
-              </div>
-              <div className="card1-info-wrapper">
-                <div className="card1-info">
-                  <div className="card1-info-title">
-                    <h3>Enterprise sample landing page</h3>
-                    <h5>July 2024 | ? Hours</h5>
-                    <h4>A simple landing page made for an enterprise called Adsko.</h4>
+        <Link to="projects/adskohero" className="cursor-context-menu">
+          <div id="cards1" className="mb-[40vh]">
+            <div className="card1">
+              <div className="card1-content">
+                <div className="card1-image">
+                  <img src={prjimg1}></img>
+                </div>
+                <div className="card1-info-wrapper">
+                  <div className="card1-info">
+                    <div className="card1-info-title">
+                      <h3>Enterprise sample landing page</h3>
+                      <h5>July 2024 | ? Hours</h5>
+                      <h4>A simple landing page made for an enterprise called Adsko.</h4>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="cards2" className="mb-[40vh]">
-          <div className="card2">
-            <div className="card2-content">
-              <div className="card2-image">
-                <img src={csimg}></img>
-              </div>
-              <div className="card2-info-wrapper">
-                <div className="card2-info">
-                  <div className="card2-info-title">
-                    <h3>Searching algorithm</h3>
-                    <h5>July 2024 | ? Hours</h5>
-                    <h4>My custom searching algorithm.</h4>
+        </Link>
+        <Link to="projects/adskohero" className="cursor-context-menu">
+          <div id="cards2" className="mb-[40vh]">
+            <div className="card2">
+              <div className="card2-content">
+                <div className="card2-image">
+                  <img src={csimg}></img>
+                </div>
+                <div className="card2-info-wrapper">
+                  <div className="card2-info">
+                    <div className="card2-info-title">
+                      <h3>Searching algorithm</h3>
+                      <h5>July 2024 | ? Hours</h5>
+                      <h4>My custom searching algorithm.</h4>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
