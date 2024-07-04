@@ -58,7 +58,7 @@ export default function MyProjectsPage() {
           <h3 id="subtitle" className="text-sky-600">My projects and case studies</h3>
           <p>This only includes project from june 2024 to present</p>
         </div>
-        <Link to="projects/adskohero" className="cursor-context-menu">
+        <Link to="/projects/adskohero" className="cursor-context-menu">
           <div id="cards1" className="mb-[40vh]">
             <div className="card1">
               <div className="card1-content">
@@ -78,7 +78,7 @@ export default function MyProjectsPage() {
             </div>
           </div>
         </Link>
-        <Link to="projects/adskohero" className="cursor-context-menu">
+        <Link to="/projects/adskohero" className="cursor-context-menu">
           <div id="cards2" className="mb-[40vh]">
             <div className="card2">
               <div className="card2-content">
