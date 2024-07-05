@@ -90,7 +90,7 @@ export default function MyProjectsPage() {
                     <div className="card2-info-title">
                       <h3>Searching algorithm</h3>
                       <h5>July 2024 | ? Hours</h5>
-                      <h4>My custom searching algorithm.</h4>
+                      <h4>A merchandising page using my custom searching algorithm.</h4>
                     </div>
                   </div>
                 </div>

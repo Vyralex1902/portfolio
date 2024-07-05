@@ -111,18 +111,20 @@ const Heading = () => {
 
   return (
     <div className="fixed top-0 flex flex-row pt-1 pb-1 z-50 justify-center w-screen h-[75px] cursor-pointer">
-      <div id="headingThing" className="min-w-[700px] backdrop-blur-lg border-gray-500 dark:border-gray-700 border-opacity-20 dark:border-opacity-100 border-[1.5px] flex w-fit justify-center py-2 rounded-lg items-center bg-transparent">
-        <motion.button id="picbtn" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} onClick={togglePicture} className="ml-5 w-14 h-14 align-middle flex justify-center rounded-full animate-reveal absolute left-0 top-[5px]">
-          <img id="profilepic" className=" w-14 h-14 align-middle rounded-full animate-reveal"></img></motion.button>
-        <div className="flex w-fit justify-center absolute justify-self-center gap-2" style={{ width: "50%" }}>
+      <motion.button id="picbtn" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} onClick={togglePicture} className="animate-reveal backdrop-blur-lg w-14 h-14 border-white border-opacity-20 align-middle flex justify-center rounded-full mr-3 mt-[5px]">
+        <img id="profilepic" className=" w-14 h-14 align-middle rounded-full "></img>
+      </motion.button>
+      <div id="headingThing" className="min-w-[550px] max-w-[550px] backdrop-blur-lg border-gray-500 dark:border-gray-700 border-opacity-20 dark:border-opacity-100 border-[1.5px] flex w-fit justify-center rounded-full items-center bg-transparent">
+        <div className="flex w-fit justify-center absolute justify-self-center gap-2" style={{ width: "100%" }}>
           <HeadingIcon id="headingIcon1" text="Home" link="/" ></HeadingIcon>
           <DevelopmentHeadingIcon />
           <HeadingIcon id="headingIcon3" text="Passions" link="/hobbies" ></HeadingIcon>
           <HeadingIcon id="headingIcon4" text="My Story" link="/mystory" ></HeadingIcon>
         </div>
-        <div id="themeToggle" className="border-2 border-white border-opacity-20 w-12 h-12 rounded-3xl bg-black bg-opacity-35 hover:bg-opacity-50
-          dark:bg-white dark:bg-opacity-20 justify-center align-middle flex items-center absolute right-0 mr-5">
-          <button className="flex align-middle justify-center"><IoMoonSharp style={{ color: "white", width: "22px", height: "22px" }} onClick={toggleTheme} /></button></div>
+      </div>
+      <div id="themeToggle" className="border-2 border-white border-opacity-20 w-14 h-14 rounded-full bg-black bg-opacity-35 hover:bg-opacity-50
+          dark:bg-white dark:bg-opacity-20 justify-center align-middle flex items-center ml-3 mt-[5px] backdrop-blur-lg">
+        <button className="flex align-middle justify-center"><IoMoonSharp style={{ color: "white", width: "22px", height: "22px" }} onClick={toggleTheme} /></button>
       </div>
     </div>
   );

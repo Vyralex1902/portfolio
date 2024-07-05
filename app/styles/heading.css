@@ -1,7 +1,3 @@
-#headingThing {
-  width: 30%;
-}
-
 .heading-icon-selected {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   text-shadow: 0 0 8px hsl(158, 60%, 48%);
@@ -48,8 +44,9 @@
 
 @media only screen and (max-width: 900px) {
   #headingThing {
-    width: 90vw;
-    min-width: 100vw;
+    max-width: 70vw;
+    min-width: 70vw;
+    width: 70vw;
   }
   #headingThing #picbtn {
     margin-left: 4px;
