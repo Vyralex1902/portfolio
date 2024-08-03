@@ -46,10 +46,11 @@ export default function Programming() {
               is the total amount of years of experience I have with that specific language. <br />y = years; m = months
             </p>
             <p>
-              <span className="text-purple-400">&gt;</span> C# <span className="text-cyan-800 dark:text-cyan-500">[5y]</span><br />
+              <span className="text-purple-400">&gt;</span> Python <span className="text-cyan-800 dark:text-cyan-500">[5y]</span><br />
               <span className="text-purple-400">&gt;</span> JS & TS <span className="text-cyan-800 dark:text-cyan-500">[4m]</span><br />
               <span className="text-purple-400">&gt;</span> HTML <span className="text-cyan-800 dark:text-cyan-500">[4m]</span><br />
               <span className="text-purple-400">&gt;</span> CSS <span className="text-cyan-800 dark:text-cyan-500">[4m]</span><br />
+              <span className="text-purple-400">&gt;</span> C# <span className="text-cyan-800 dark:text-cyan-500">[5y]</span><br />
             </p>
           </div>
           <div id="sectionDiv">
@@ -61,7 +62,7 @@ export default function Programming() {
           <div id="sectionDiv">
             <h2>Languages I will probably study</h2>
             <p>
-              <span className="text-purple-400">&gt;</span> Python
+              <span className="text-purple-400">&gt;</span> Swift
             </p>
           </div>
           <div className="mt-[10vh] flex gap-5">
