@@ -62,6 +62,7 @@ export default function Programming() {
           <div id="sectionDiv">
             <h2>Languages I will probably study</h2>
             <p>
+              <span className="text-purple-400">&gt;</span> C++
               <span className="text-purple-400">&gt;</span> Swift
             </p>
           </div>
