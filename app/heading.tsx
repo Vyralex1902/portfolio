@@ -152,6 +152,9 @@ const DevelopmentHeadingIcon = () => (
         <Link to="myprojects" className="cursor-pointer">
           <p id="di3" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">My Projects</p>
         </Link>
+        <Link to="meridian" className="cursor-pointer">
+          <p id="di4" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">Project Meridian</p>
+        </Link>
       </div>
     </div>
   </div>
