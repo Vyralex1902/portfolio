@@ -4,10 +4,8 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 
-import "../styles/programming.css";
+import "../styles/meridian.css";
 import "../styles/global.css";
-
-import arrowsvg from "../assets/arrow.svg"
 
 
 export default function Programming() {
@@ -34,15 +32,15 @@ export default function Programming() {
   return (
     <div className="flex flex-col align-top">
       <input type="text" className="absolute hidden" id="pageName" value={"meridian"} readOnly></input>
-      <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top darkmode-bg
+      <div style={{ width: "100%", height: "100%" }} className="flex flex-col items-center align-top darkmode-bg
        text-black dark:text-white">
-        <div id="topdiv" className="z-10 flex flex-col justify-center items-center mb-10 mt-20">
+        <div id="topdiv" className="z-10 flex flex-col justify-center items-center mb-5 mt-20">
           <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Project Meridian (MKI)</h1>
         </div>
-        <div id="sectionContainer" className="flex flex-col items-start h-[100vh]">
+        <div id="sectionContainer" className="flex flex-col items-center h-[100vh]">
           <div id="sectionDiv">
-            <h2>Welcome to Project Meridian MKI</h2>
-            <p className="text-sm max-w-[500px] text-gray-400 my-1 text-center -ml-6">where "virtual assistant" takes on a completely different meaning.
+            <h2 className="text-center text-3xl">Welcome to Project <span id="futuraf">Meridian MKI</span></h2>
+            <p className="text-md max-w-[500px] text-gray-400 mb-2 -mt-1 text-center">where "virtual assistant" takes on a completely different meaning.
             </p>
             <p>
               <span className="text-purple-400">&gt;</span> Release date: <span className="text-cyan-800 dark:text-cyan-500">TBD</span><br />
@@ -58,34 +56,33 @@ export default function Programming() {
             </p>
           </div>
           <div id="sectionDiv">
-            <h2>What is it?</h2>
-            <p>
-              Meridian MKI is a project designed to be the Final-Level virtual assistant for macOS, Windows and maybe even iOS.
-              It fuses every useful feature that a virtual assistant could have and also bundles even rarer features usually only available with third party software.
-              It basically is a mix of useful tools. It can be useful for everybody, from developers to designers to software enthusiast.
-              I also made up a company name: "Meridian Industries" that might actually become reality one day.
-              I designed Meridian's and Meridian Industries' logos myself.
+            <h2 className="text-center">What is it?</h2>
+            <p className="max-w-[50vw]">
+              <span id="futuraf">Meridian MKI</span> is a project designed to be the Final-Level virtual assistant for macOS, Windows and maybe even iOS.<br />
+              It fuses every useful feature that a virtual assistant could have and also bundles even rarer features usually only available with third party software.<br />
+              It basically is a mix of useful tools. It can be useful for everybody, from developers to designers to software enthusiast.<br />
+              I also made up a company name: "<span id="futuraf">Meridian Industries</span>" that might actually become reality one day.<br />
+              I designed <span id="futuraf">Meridian</span>'s and <span id="futuraf">Meridian Industries</span>' logos myself.
             </p>
           </div>
           <div id="sectionDiv">
-            <h2>Why?</h2>
-            <p>
-              This project has been created mainly for myself (Luca Montanari), to make my life easier and learn Python in the meantime.
-              But making this public sounds good to me, maybe other people can find this useful too.
+            <h2 className="text-center">Why?</h2>
+            <p className="max-w-[50vw]">
+              This project has been created mainly for myself (Luca Montanari), to make my life easier and learn Python in the meantime.<br />
+              But making this public sounds good to me, maybe other people can find this useful too.<br />
               I took inspiration from Iron-Man's Jarvis and other real virtual assistants.
             </p>
           </div>
-          <div className="mt-[10vh] flex gap-5">
+          <div className="mt-[3vh] flex gap-5">
             <div id='downloadbtncontainer'>
               <div className='flex justify-start pt-2'>
                 <div className='w-fit'>
-                  <Link to="myprojects" className="cursor-context-menu" >
+                  <Link to="tutorial" className="cursor-context-menu" >
                     <div className="downloadbtn_div">
                       <motion.button id="btnlink" className="w-[250px] h-[52px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
                          font-bold hover:bg-blue-600 hover:text-[#081b29] text-lg font-[Montserrat] transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
                         <div className='flex justify-center items-center'>
                           <p className="-ml-5">Get Started</p>
-                          <img id="arrowimg1" src={arrowsvg}></img>
                         </div>
                       </motion.button>
                     </div>
@@ -98,7 +95,8 @@ export default function Programming() {
                 <div className='w-fit'>
                   <Link to="docs" className="cursor-context-menu">
                     <div className="downloadbtn_div">
-                      <motion.button className="homepagebtnlarger" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
+                      <motion.button className="w-[250px] h-[52px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
+                         font-bold hover:bg-blue-600 hover:text-[#081b29] text-lg font-[Montserrat] transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
                         <div className='flex flex-col justify-left -ml-5'>
                           <p>Docs</p>
                         </div>
@@ -109,13 +107,6 @@ export default function Programming() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="relative bottom-6">
-          <a href="/portfolio/contactme">
-            <p className="underline text-blue-600 dark:text-blue-500">
-              Suggest a programming language
-            </p>
-          </a>
         </div>
       </div>
     </div>
