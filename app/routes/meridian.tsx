@@ -42,26 +42,37 @@ export default function Programming() {
         <div id="sectionContainer" className="flex flex-col items-start h-[100vh]">
           <div id="sectionDiv">
             <h2>Welcome to Project Meridian MKI</h2>
-            <p className="text-sm max-w-[500px] text-gray-400 my-1 text-center -ml-6">The number next to the language, inside of the brackets,
-              is the total amount of years of experience I have with that specific language. <br />y = years; m = months
+            <p className="text-sm max-w-[500px] text-gray-400 my-1 text-center -ml-6">where "virtual assistant" takes on a completely different meaning.
             </p>
             <p>
-              <span className="text-purple-400">&gt;</span> C# <span className="text-cyan-800 dark:text-cyan-500">[5y]</span><br />
-              <span className="text-purple-400">&gt;</span> JS & TS <span className="text-cyan-800 dark:text-cyan-500">[4m]</span><br />
-              <span className="text-purple-400">&gt;</span> HTML <span className="text-cyan-800 dark:text-cyan-500">[4m]</span><br />
-              <span className="text-purple-400">&gt;</span> CSS <span className="text-cyan-800 dark:text-cyan-500">[4m]</span><br />
+              <span className="text-purple-400">&gt;</span> Release date: <span className="text-cyan-800 dark:text-cyan-500">TBD</span><br />
+              <span className="text-purple-400">&gt;</span> Devopment time: <span className="text-cyan-800 dark:text-cyan-500">25th July 2024 -&gt; TBD</span><br />
+              <span className="text-purple-400">&gt;</span> Languages used: <span className="text-cyan-800 dark:text-cyan-500">Python</span>
+              <span className="text-black dark:text-white">,</span>
+              <span className="text-cyan-800 dark:text-cyan-500"> C</span>
+              <span className="text-black dark:text-white">,</span>
+              <span className="text-cyan-800 dark:text-cyan-500"> C++</span>
+              <br />
+              <span className="text-purple-400">&gt;</span> Open-Source: <span className="text-cyan-800 dark:text-cyan-500">Not yet</span><br />
+              <span className="text-purple-400">&gt;</span> "Pro" price: <span className="text-cyan-800 dark:text-cyan-500">TBD</span><br />
             </p>
           </div>
           <div id="sectionDiv">
-            <h2>Programming Languages I am currently learning (2024)</h2>
+            <h2>What is it?</h2>
             <p>
-              <span className="text-purple-400">&gt;</span> Swift
+              Meridian MKI is a project designed to be the Final-Level virtual assistant for macOS, Windows and maybe even iOS.
+              It fuses every useful feature that a virtual assistant could have and also bundles even rarer features usually only available with third party software.
+              It basically is a mix of useful tools. It can be useful for everybody, from developers to designers to software enthusiast.
+              I also made up a company name: "Meridian Industries" that might actually become reality one day.
+              I designed Meridian's and Meridian Industries' logos myself.
             </p>
           </div>
           <div id="sectionDiv">
-            <h2>Languages I will probably study</h2>
+            <h2>Why?</h2>
             <p>
-              <span className="text-purple-400">&gt;</span> Python
+              This project has been created mainly for myself (Luca Montanari), to make my life easier and learn Python in the meantime.
+              But making this public sounds good to me, maybe other people can find this useful too.
+              I took inspiration from Iron-Man's Jarvis and other real virtual assistants.
             </p>
           </div>
           <div className="mt-[10vh] flex gap-5">
@@ -73,7 +84,7 @@ export default function Programming() {
                       <motion.button id="btnlink" className="w-[250px] h-[52px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
                          font-bold hover:bg-blue-600 hover:text-[#081b29] text-lg font-[Montserrat] transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
                         <div className='flex justify-center items-center'>
-                          <p className="-ml-5">Explore my projects</p>
+                          <p className="-ml-5">Get Started</p>
                           <img id="arrowimg1" src={arrowsvg}></img>
                         </div>
                       </motion.button>
@@ -89,7 +100,7 @@ export default function Programming() {
                     <div className="downloadbtn_div">
                       <motion.button className="homepagebtnlarger" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
                         <div className='flex flex-col justify-left -ml-5'>
-                          <p>Learn from the docs</p>
+                          <p>Docs</p>
                         </div>
                       </motion.button>
                     </div>

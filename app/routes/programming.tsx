@@ -42,8 +42,8 @@ export default function Programming() {
         <div id="sectionContainer" className="flex flex-col items-start h-[100vh]">
           <div id="sectionDiv">
             <h2>Programming Languages I currently know (2024)</h2>
-            <p className="text-sm max-w-[500px] text-gray-400 my-1 text-center -ml-6">The number next to the language, inside of the brackets,
-              is the total amount of years of experience I have with that specific language. <br />y = years; m = months
+            <p className="text-sm max-w-[500px] text-gray-400 my-1 text-center -ml-6">The number next to the language (inside of the brackets) represents
+              the date when I since started using that language to devop products.
             </p>
             <p>
               <span className="text-purple-400">&gt;</span> Python <span className="text-cyan-800 dark:text-cyan-500">[aug2024]</span><br />
