@@ -46,11 +46,11 @@ export default function Programming() {
               is the total amount of years of experience I have with that specific language. <br />y = years; m = months
             </p>
             <p>
-              <span className="text-purple-400">&gt;</span> Python <span className="text-cyan-800 dark:text-cyan-500">[&lt;1m]</span><br />
-              <span className="text-purple-400">&gt;</span> JS & TS <span className="text-cyan-800 dark:text-cyan-500">[4m]</span><br />
-              <span className="text-purple-400">&gt;</span> HTML <span className="text-cyan-800 dark:text-cyan-500">[4m]</span><br />
-              <span className="text-purple-400">&gt;</span> CSS <span className="text-cyan-800 dark:text-cyan-500">[4m]</span><br />
-              <span className="text-purple-400">&gt;</span> C# <span className="text-cyan-800 dark:text-cyan-500">[5y]</span><br />
+              <span className="text-purple-400">&gt;</span> Python <span className="text-cyan-800 dark:text-cyan-500">[aug2024]</span><br />
+              <span className="text-purple-400">&gt;</span> JS & TS <span className="text-cyan-800 dark:text-cyan-500">[mar2024]</span><br />
+              <span className="text-purple-400">&gt;</span> HTML <span className="text-cyan-800 dark:text-cyan-500">[mar2024]</span><br />
+              <span className="text-purple-400">&gt;</span> CSS <span className="text-cyan-800 dark:text-cyan-500">[mar2024]</span><br />
+              <span className="text-purple-400">&gt;</span> C# <span className="text-cyan-800 dark:text-cyan-500">[2019]</span><br />
             </p>
           </div>
           <div id="sectionDiv">
