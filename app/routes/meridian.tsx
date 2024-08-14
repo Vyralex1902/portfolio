@@ -34,9 +34,9 @@ export default function Programming() {
   return (
     <div className="flex flex-col align-top">
       <input type="text" className="absolute hidden" id="pageName" value={"meridian"} readOnly></input>
-      <div style={{ width: "100%", height: "100%" }} className="flex flex-col items-center align-top darkmode-bg
+      <div style={{ width: "100vw", height: "auto" }} className="flex flex-col items-center darkmode-bg
        text-black dark:text-white">
-        <img src={mpatt} className="fixed w-[100vw] h-auto opacity-10"></img>
+        {/* <img src={mpatt} className="fixed w-[100vw] h-auto opacity-10"></img> */}
         <div id="topdiv" className="z-10 flex flex-col justify-center items-center mb-5 mt-20">
           <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Project Meridian (MKI)</h1>
         </div>
@@ -60,25 +60,7 @@ export default function Programming() {
           </div>
           <p className="text-3xl -mb-7 mt-5 z-10 text-white">Presented and developed by</p>
           <img src={milogo} className="w-[50vw] h-auto dark:bg-transparent bg-gray-700 rounded-md"></img>
-          <div id="sectionDiv">
-            <h2 className="text-center">What is it?</h2>
-            <p className="max-w-[50vw]">
-              <span id="futuraf">Meridian MKI</span> is a project designed to be the Final-Level virtual assistant for macOS, Windows and maybe even iOS.<br />
-              It fuses every useful feature that a virtual assistant could have and also bundles even rarer features usually only available with third party software.<br />
-              It basically is a mix of useful tools. It can be useful for everybody, from developers to designers to software enthusiast.<br />
-              I also made up a company name: "<span id="futuraf">Meridian Industries</span>" that might actually become reality one day.<br />
-              I designed <span id="futuraf">Meridian</span>'s and <span id="futuraf">Meridian Industries</span>' logos myself.
-            </p>
-          </div>
-          <div id="sectionDiv">
-            <h2 className="text-center">Why?</h2>
-            <p className="max-w-[50vw]">
-              This project has been created mainly for myself (Luca Montanari), to make my life easier and learn Python in the meantime.<br />
-              But making this public sounds good to me, maybe other people can find this useful too.<br />
-              I took inspiration from Iron-Man's Jarvis and other real virtual assistants.
-            </p>
-          </div>
-          <div className="flex gap-5">
+          <div className="flex gap-5 mb-10">
             <div id='downloadbtncontainer'>
               <div className='flex justify-start pt-2'>
                 <div className='w-fit'>
@@ -111,6 +93,24 @@ export default function Programming() {
                 </div>
               </div>
             </div>
+          </div>
+          <div id="sectionDiv">
+            <h2 className="text-center">What is it?</h2>
+            <p className="max-w-[50vw]">
+              <span id="futuraf">Meridian MKI</span> is a project designed to be the Final-Level virtual assistant for macOS, Windows and maybe even iOS.<br />
+              It fuses every useful feature that a virtual assistant could have and also bundles even rarer features usually only available with third party software.<br />
+              It basically is a mix of useful tools. It can be useful for everybody, from developers to designers to software enthusiast.<br />
+              I also made up a company name: "<span id="futuraf">Meridian Industries</span>" that might actually become reality one day.<br />
+              I designed <span id="futuraf">Meridian</span>'s and <span id="futuraf">Meridian Industries</span>' logos myself.
+            </p>
+          </div>
+          <div id="sectionDiv">
+            <h2 className="text-center">Why?</h2>
+            <p className="max-w-[50vw]">
+              This project has been created mainly for myself (Luca Montanari), to make my life easier and learn Python in the meantime.<br />
+              But making this public sounds good to me, maybe other people can find this useful too.<br />
+              I took inspiration from Iron-Man's Jarvis and other real virtual assistants.
+            </p>
           </div>
         </div>
       </div>
