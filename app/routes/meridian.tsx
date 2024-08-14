@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 import "../styles/meridian.css";
 import "../styles/global.css";
+import milogo from "../assets/milogo.png"
+import mpatt from "../assets/Meridian Pattern.png"
 
 
 export default function Programming() {
@@ -34,6 +36,7 @@ export default function Programming() {
       <input type="text" className="absolute hidden" id="pageName" value={"meridian"} readOnly></input>
       <div style={{ width: "100%", height: "100%" }} className="flex flex-col items-center align-top darkmode-bg
        text-black dark:text-white">
+        <img src={mpatt} className="fixed w-[100vw] h-auto opacity-10"></img>
         <div id="topdiv" className="z-10 flex flex-col justify-center items-center mb-5 mt-20">
           <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Project Meridian (MKI)</h1>
         </div>
@@ -55,6 +58,8 @@ export default function Programming() {
               <span className="text-purple-400">&gt;</span> "Pro" price: <span className="text-cyan-800 dark:text-cyan-500">TBD</span><br />
             </p>
           </div>
+          <p className="text-3xl -mb-7 mt-5 z-10 text-white">Presented and developed by</p>
+          <img src={milogo} className="w-[50vw] h-auto dark:bg-transparent bg-gray-700 rounded-md"></img>
           <div id="sectionDiv">
             <h2 className="text-center">What is it?</h2>
             <p className="max-w-[50vw]">
@@ -73,7 +78,7 @@ export default function Programming() {
               I took inspiration from Iron-Man's Jarvis and other real virtual assistants.
             </p>
           </div>
-          <div className="mt-[3vh] flex gap-5">
+          <div className="flex gap-5">
             <div id='downloadbtncontainer'>
               <div className='flex justify-start pt-2'>
                 <div className='w-fit'>
