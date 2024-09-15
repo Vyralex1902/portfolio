@@ -3,16 +3,24 @@ h2 {
   font-weight: 800;
 }
 
-p {
-  padding-left: 20px;
+#sectionDivFirst {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px;
+  padding: 10px;
+  border-color: gray;
+  justify-content: center;
+  width: 550px;
+  border: 0.4px solid rgb(255, 255, 255, 0.4);
 }
-
 #sectionDiv {
   margin-top: 10px;
   margin-bottom: 10px;
   border-bottom: 1px;
+  padding: 10px;
   border-color: gray;
-  justify-content: left;
+  justify-content: center;
+  width: 50vw;
 }
 
 .downloadbtn_div {
@@ -37,4 +45,23 @@ p {
 
 #futuraf {
   font-family: "futura";
+}
+
+#heroSection {
+  background: radial-gradient(ellipse at top, #050f26 30%, #0c338c 70%);
+}
+
+#title1 {
+  -webkit-text-stroke: 3px white;
+  color: transparent;
+}
+
+#mki {
+  font-family: "Gideon Roman", serif;
+}
+
+#catchPhrase {
+  font-weight: 300;
+  color: white;
+  text-shadow: 2px 2px 5px #9e9e9e, 0 0 10px #929292;
 }

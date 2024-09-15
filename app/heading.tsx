@@ -183,6 +183,7 @@ const toggleTheme = () => {
     || document.getElementById("pageName")?.getAttribute('value') == "home"
     || document.getElementById("pageName")?.getAttribute('value') == "mystory"
     || document.getElementById("pageName")?.getAttribute('value') == "hireme"
+    || document.getElementById("pageName")?.getAttribute('value') == "meridian"
   ) {
     switchableTheme = false;
   }

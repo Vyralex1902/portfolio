@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import "../styles/meridian.css";
 import "../styles/global.css";
 import milogo from "../assets/milogo.png"
+import mlogo from "../assets/Meridian.png"
 import mpatt from "../assets/Meridian Pattern.png"
 
 
@@ -34,32 +35,58 @@ export default function Programming() {
   return (
     <div className="flex flex-col align-top">
       <input type="text" className="absolute hidden" id="pageName" value={"meridian"} readOnly></input>
-      <div style={{ width: "100vw", height: "auto" }} className="flex flex-col items-center darkmode-bg
-       text-black dark:text-white">
-        {/* <img src={mpatt} className="fixed w-[100vw] h-auto opacity-10"></img> */}
-        <div id="topdiv" className="z-10 flex flex-col justify-center items-center mb-5 mt-20">
-          <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Project Meridian (MKI)</h1>
+      <div id="heroSection" style={{ width: "100vw", height: "100vh" }} className="flex flex-col items-center align-middle text-white">
+        <div className="flex w-[100vw] h-[auto] justify-center mt-[15vh]">
+          <h1 id="title1" className="text-8xl font-[Futura]">Meridian</h1>
+          <h1 className="text-8xl font-[K2D] bg-gradient-to-r from-[#006EFF] via-[#00A8E2] to-[#00FFB7] inline-block text-transparent bg-clip-text">NEXT</h1>
         </div>
-        <div id="sectionContainer" className="flex flex-col items-center h-[100vh]">
-          <div id="sectionDiv">
-            <h2 className="text-center text-3xl">Welcome to Project <span id="futuraf">Meridian MKI</span></h2>
-            <p className="text-md max-w-[500px] text-gray-400 mb-2 -mt-1 text-center">where "virtual assistant" takes on a completely different meaning.
-            </p>
-            <p>
+        <div className="flex items-center">
+          <img src={milogo} className="w-[50vw] h-auto bg-transparent -ml-5"></img>
+          <h1 id="mki" className="text-4xl -ml-5">MKI</h1>
+        </div>
+        <div className="flex flex-col items-center mt-10">
+          <h1 id="catchPhrase" className="text-5xl font-[Poppins]">More than your average virtual assistant</h1>
+          <img src={mlogo} className="w-[20vw] h-auto bg-transparent mt-10"></img>
+        </div>
+      </div>
+
+
+      <div style={{ width: "100vw", height: "auto" }} className="flex flex-col items-center text-white bg-gradient-to-b from-[#0C338C] to-[#00AF92]">
+        <div className="mb-10">
+          <h1 className="text-5xl font-[Poppins]">
+            <span className="text-[#006EFF] font-[K2D] text-6xl">N</span>
+            atural&nbsp;
+            <span className="text-[#00A8E2] font-[K2D] text-6xl">E</span>
+            ngagement&nbsp;
+            <span className="text-[#00FFB7] font-[K2D] text-6xl">X</span>
+            ecution&nbsp;
+            <span className="text-[#00FFB7] font-[K2D] text-6xl">T</span>
+            ecnologies
+          </h1>
+        </div>
+        <motion.div initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }}>
+          <div id="sectionDivFirst" className="backdrop-blur-md rounded-xl bg-white/5">
+            <div className="text-center flex flex-col">
+              <h2 className="text-3xl">Welcome to Project <span id="futuraf">Meridian MKI</span></h2>
+              <p className="text-md text-gray-400 mb-2 w-[100%]">where "virtual assistant" takes on a completely different meaning.
+              </p>
+            </div>
+            <p className="pl-[120px]">
               <span className="text-purple-400">&gt;</span> Release date: <span className="text-cyan-800 dark:text-cyan-500">TBD</span><br />
               <span className="text-purple-400">&gt;</span> Devopment time: <span className="text-cyan-800 dark:text-cyan-500">25th July 2024 -&gt; TBD</span><br />
               <span className="text-purple-400">&gt;</span> Languages used: <span className="text-cyan-800 dark:text-cyan-500">Python</span>
-              <span className="text-black dark:text-white">,</span>
+              <span className="text-white">,</span>
               <span className="text-cyan-800 dark:text-cyan-500"> C</span>
-              <span className="text-black dark:text-white">,</span>
+              <span className="text-white">,</span>
               <span className="text-cyan-800 dark:text-cyan-500"> C++</span>
               <br />
               <span className="text-purple-400">&gt;</span> Open-Source: <span className="text-cyan-800 dark:text-cyan-500">Not yet</span><br />
               <span className="text-purple-400">&gt;</span> "Pro" price: <span className="text-cyan-800 dark:text-cyan-500">TBD</span><br />
             </p>
           </div>
-          <p className="text-3xl -mb-7 mt-5 z-10 text-white">Presented and developed by</p>
-          <img src={milogo} className="w-[50vw] h-auto dark:bg-transparent bg-gray-700 rounded-md"></img>
+        </motion.div>
+        <div id="sectionContainer" className="flex flex-col items-center h-[100vh]">
           <div className="flex gap-5 mb-10">
             <div id='downloadbtncontainer'>
               <div className='flex justify-start pt-2'>
@@ -95,7 +122,7 @@ export default function Programming() {
             </div>
           </div>
           <div id="sectionDiv">
-            <h2 className="text-center">What is it?</h2>
+            <h2 className="text-center text-3xl">What is it?</h2>
             <p className="max-w-[50vw]">
               <span id="futuraf">Meridian MKI</span> is a project designed to be the Final-Level virtual assistant for macOS, Windows and maybe even iOS.<br />
               It fuses every useful feature that a virtual assistant could have and also bundles even rarer features usually only available with third party software.<br />
@@ -105,7 +132,7 @@ export default function Programming() {
             </p>
           </div>
           <div id="sectionDiv">
-            <h2 className="text-center">Why?</h2>
+            <h2 className="text-center text-3xl">Why?</h2>
             <p className="max-w-[50vw]">
               This project has been created mainly for myself (Luca Montanari), to make my life easier and learn Python in the meantime.<br />
               But making this public sounds good to me, maybe other people can find this useful too.<br />
@@ -114,6 +141,6 @@ export default function Programming() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
