@@ -102,6 +102,7 @@ export default function Programming() {
             </div>
             <p className="pl-[120px]">
               <span className="text-purple-400">&gt;</span> Release date: <span className="text-orange-400 ">TBD</span><br />
+              <span className="text-purple-400">&gt;</span> Estimated release date: <span className="text-orange-400 ">13/07/2025</span><br />
               <span className="text-purple-400">&gt;</span> Devopment time: <span className="text-orange-400 ">25th July 2024 -&gt; TBD</span><br />
               <span className="text-purple-400">&gt;</span> Languages used: <span className="text-orange-400 ">Python</span>
               <span className="text-white">,</span>
