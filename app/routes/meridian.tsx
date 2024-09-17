@@ -39,6 +39,7 @@ export default function Programming() {
     "Personal devices Interconnection",
     "Files and strings encryption",
     "Translator and string manipulation",
+    "Language detection",
     "Triggered actions",
     "Network management",
     "Customizable settings",
@@ -57,6 +58,12 @@ export default function Programming() {
     "Describe images",
     "Tell facts and jokes",
     "Play minigames",
+    "Advanced IRL calculations (BMI,BAC)",
+    "Machine optimization",
+    "Encryption of files and strings",
+    "Password manipulation",
+    "AI text manipulation",
+    "Multiple LLM selection",
     "Hidden eastereggs",
   ]
 
