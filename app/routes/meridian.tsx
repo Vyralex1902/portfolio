@@ -32,6 +32,34 @@ export default function Programming() {
     console.log("Page loaded.");
   });
 
+  const features = [
+    "Task scheduling and automation",
+    "Process Management",
+    "Built-in anti-malware scan",
+    "Personal devices Interconnection",
+    "Files and strings encryption",
+    "Translator and string manipulation",
+    "Triggered actions",
+    "Network management",
+    "Customizable settings",
+    "O.C.R.",
+    "Meridian-AI",
+    "Resources monitoring",
+    "Context awareness",
+    "Behavioral adaptation",
+    "Conversational optimization",
+    "Notification to devices",
+    "File manipulation",
+    "Advanced CLI tools",
+    "String correction",
+    "Device settings management",
+    "Describe documents",
+    "Describe images",
+    "Tell facts and jokes",
+    "Play minigames",
+    "Hidden eastereggs",
+  ]
+
   return (
     <div className="flex flex-col align-top">
       <input type="text" className="absolute hidden" id="pageName" value={"meridian"} readOnly></input>
@@ -73,20 +101,20 @@ export default function Programming() {
               </p>
             </div>
             <p className="pl-[120px]">
-              <span className="text-purple-400">&gt;</span> Release date: <span className="text-cyan-800 dark:text-cyan-500">TBD</span><br />
-              <span className="text-purple-400">&gt;</span> Devopment time: <span className="text-cyan-800 dark:text-cyan-500">25th July 2024 -&gt; TBD</span><br />
-              <span className="text-purple-400">&gt;</span> Languages used: <span className="text-cyan-800 dark:text-cyan-500">Python</span>
+              <span className="text-purple-400">&gt;</span> Release date: <span className="text-orange-400 ">TBD</span><br />
+              <span className="text-purple-400">&gt;</span> Devopment time: <span className="text-orange-400 ">25th July 2024 -&gt; TBD</span><br />
+              <span className="text-purple-400">&gt;</span> Languages used: <span className="text-orange-400 ">Python</span>
               <span className="text-white">,</span>
-              <span className="text-cyan-800 dark:text-cyan-500"> C</span>
+              <span className="text-orange-400"> C</span>
               <span className="text-white">,</span>
-              <span className="text-cyan-800 dark:text-cyan-500"> C++</span>
+              <span className="text-orange-400"> C++</span>
               <br />
-              <span className="text-purple-400">&gt;</span> Open-Source: <span className="text-cyan-800 dark:text-cyan-500">Not yet</span><br />
-              <span className="text-purple-400">&gt;</span> "Pro" price: <span className="text-cyan-800 dark:text-cyan-500">TBD</span><br />
+              <span className="text-purple-400">&gt;</span> Open-Source: <span className="text-orange-400 ">Not yet</span><br />
+              <span className="text-purple-400">&gt;</span> "Pro" price: <span className="text-orange-400 ">TBD</span><br />
             </p>
           </div>
         </motion.div>
-        <div id="sectionContainer" className="flex flex-col items-center h-[100vh]">
+        <div id="sectionContainer" className="flex flex-col items-center h-[auto] mb-20">
           <div className="flex gap-5 mb-10">
             <div id='downloadbtncontainer'>
               <div className='flex justify-start pt-2'>
@@ -138,6 +166,24 @@ export default function Programming() {
               But making this public sounds good to me, maybe other people can find this useful too.<br />
               I took inspiration from Iron-Man's Jarvis and other real virtual assistants.
             </p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-gradient-to-b from-[#00AF92] to-emerald-800 text-white p-8 w-[100vw] h-[auto]">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
+            We can't list every feature, they are <span className="underline">too many</span>.
+          </h1>
+          <p className="text-xl md:text-2xl text-center mb-12">But here are some...</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-white bg-opacity-20 border-[0.5px] border-white/30 rounded-full py-3 px-6 text-center flex items-center justify-center h-full"
+              >
+                <span className="text-sm md:text-base">{feature}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

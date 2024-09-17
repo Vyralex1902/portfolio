@@ -105,6 +105,21 @@ const Heading = () => {
         }
       }
     }
+    else if (document.getElementById("pageName")?.getAttribute('value') == "meridian") {
+      if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'dark') {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        }
+
+        // if NOT set via local storage previously
+      } else {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        }
+      }
+    }
 
     console.log("Heading loaded.");
   });
