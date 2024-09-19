@@ -1,12 +1,75 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-
+import { motion, stagger, useAnimate } from "framer-motion";
+import { ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 import arrowsvg from "../assets/arrow.svg"
 
 import "../styles/mystory.css";
 import "../styles/global.css";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+
+export const TextGenerateEffect = ({
+  words,
+  className,
+  filter = true,
+  duration = 0.5,
+}: {
+  words: string;
+  className?: string;
+  filter?: boolean;
+  duration?: number;
+}) => {
+  const [scope, animate] = useAnimate();
+  let wordsArray = words.split(" ");
+  useEffect(() => {
+    animate(
+      "span",
+      {
+        opacity: 1,
+        filter: filter ? "blur(0px)" : "none",
+      },
+      {
+        duration: duration ? duration : 1,
+        delay: stagger(0.2),
+      }
+    );
+  }, [scope.current]);
+
+  const renderWords = () => {
+    return (
+      <motion.div ref={scope}>
+        {wordsArray.map((word, idx) => {
+          return (
+            <motion.span
+              key={word + idx}
+              className="text-white opacity-0"
+              style={{
+                filter: filter ? "blur(10px)" : "none",
+              }}
+            >
+              {word}{" "}
+            </motion.span>
+          );
+        })}
+      </motion.div>
+    );
+  };
+
+  return (
+    <div className={cn("font-bold", className)}>
+      <div className="mt-4">
+        <div className=" dark:text-white text-black text-2xl leading-snug tracking-wide">
+          {renderWords()}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default function HobbiesPage() {
 
@@ -16,8 +79,12 @@ export default function HobbiesPage() {
     console.log("Page loaded.");
   });
 
+  const words = `Here's the story about how I started programming. It has been a beautiful journey. Full of pain, bugs and gratification.
+My greatest passion is almost ready to become a job. Anyways, enjoy the story now.`;
+
   return (
     <div style={{ width: "100%", height: "100%" }} className="flex flex-col align-top bg-[rgba(14,16,17,1)] mb-10">
+      <TextGenerateEffect words={words} className="z-20 absolute top-56 left-20 right-20 text-white" />
       <input type="text" className="absolute hidden" id="pageName" value={"mystory"} readOnly></input>
       <div style={{ width: "100%", height: "100vh" }} className="bg-[rgba(14,16,17,1)] fixed z-0"></div>
       <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top bg-[rgba(14,16,17,1)] text-white">

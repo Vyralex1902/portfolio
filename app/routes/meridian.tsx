@@ -1,14 +1,21 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { X } from 'lucide-react'
+
 
 
 import "../styles/meridian.css";
 import "../styles/global.css";
 import milogo from "../assets/milogo.png"
 import mlogo from "../assets/Meridian.png"
+import testImg from "../assets/mainPageTextClip.jpg"
+import coffee from "../assets/coffee.jpg"
+import friend from "../assets/friend.jpg"
+import rarrow from "../assets/right-arrow.jpg"
 import mpatt from "../assets/Meridian Pattern.png"
+
 
 
 export default function Programming() {
@@ -67,6 +74,46 @@ export default function Programming() {
     "Hidden eastereggs",
   ]
 
+  const cards = [
+    {
+      id: 1,
+      title: 'Productivity',
+      subtitle: 'Enhance your productivity',
+      image: coffee,
+      content: 'The Meridian product line is designed to enhance your productivity with very dristraction-free tools.'
+    },
+    {
+      id: 2,
+      title: 'Powerful',
+      subtitle: 'Have more control with our powerful tools.',
+      image: testImg,
+      content: 'Our powerful tools can help you perform operation on your machine that you probably would have struggled with..'
+    },
+    {
+      id: 3,
+      title: 'Friendly friend',
+      subtitle: 'Make Meridian your friend.',
+      image: friend,
+      content: 'Be friendly to him and you will build a good and loyal friend that will always help you and know about you.'
+    },
+    {
+      id: 4,
+      title: "There's more",
+      subtitle: 'Swipe right.',
+      image: rarrow,
+      content: 'There is always more.'
+    },
+    {
+      id: 5,
+      title: 'Launch soon',
+      subtitle: 'We are launching Meridian soon.',
+      image: mlogo,
+      content: 'Get ready for the Meridian product line launch very soon.'
+    },
+  ]
+
+  const [selectedCard, setSelectedCard] = useState(null)
+
   return (
     <div className="flex flex-col align-top">
       <input type="text" className="absolute hidden" id="pageName" value={"meridian"} readOnly></input>
@@ -74,6 +121,10 @@ export default function Programming() {
         <div className="flex w-[100vw] h-[auto] justify-center mt-[15vh]">
           <h1 id="title1" className="text-8xl font-[Futura]">Meridian</h1>
           <h1 className="text-8xl font-[K2D] bg-gradient-to-r from-[#006EFF] via-[#00A8E2] to-[#00FFB7] inline-block text-transparent bg-clip-text">NEXT</h1>
+        </div>
+        <div className="flex">
+          <div className="absolute ml-10 inset-x-20 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+          <div className="absolute ml-10 inset-x-60 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
         </div>
         <div className="flex items-center">
           <img src={milogo} className="w-[50vw] h-auto bg-transparent -ml-5"></img>
@@ -193,6 +244,59 @@ export default function Programming() {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+
+
+      <div className="">
+        <div className="relative min-h-screen bg-gradient-to-b from-emerald-800 to-cyan-400 text-white p-8">
+          <div className="flex overflow-x-auto space-x-4 pb-8 pt-8 snap-x snap-mandatory">
+            {cards.map((card) => (
+              <motion.div
+                key={card.id}
+                className="flex-shrink-0 w-72 snap-center"
+                whileHover={{ scale: 1.05 }}
+                onClick={() => setSelectedCard(card)}
+              >
+                <div className="relative aspect-[3/4] rounded-3xl overflow-hidden cursor-pointer">
+                  <img src={card.image} alt={card.title} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40" />
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <h3 className="text-lg font-semibold">{card.title}</h3>
+                    <p className="text-2xl font-bold mt-2">{card.subtitle}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <AnimatePresence>
+            {selectedCard && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
+              >
+                <motion.div
+                  initial={{ scale: 0.9, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.9, opacity: 0 }}
+                  className="bg-gray-900 rounded-3xl p-8 max-w-2xl w-full relative"
+                >
+                  <button
+                    onClick={() => setSelectedCard(null)}
+                    className="absolute top-4 right-4 text-white hover:text-gray-300"
+                  >
+                    <X size={24} />
+                  </button>
+                  <h2 className="text-3xl font-bold mb-4">{selectedCard.title}</h2>
+                  <p className="text-xl mb-6">{selectedCard.subtitle}</p>
+                  <p className="text-gray-300">{selectedCard.content}</p>
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </div >
