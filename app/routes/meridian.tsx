@@ -133,13 +133,6 @@ export default function Programming() {
     },
     {
       id: 4,
-      title: "There's more",
-      subtitle: 'Swipe right.',
-      image: rarrow,
-      content: 'There is always more.'
-    },
-    {
-      id: 5,
       title: 'Launch soon',
       subtitle: 'We are launching Meridian soon.',
       image: mlogo,
@@ -167,7 +160,7 @@ export default function Programming() {
           <img src={milogo} className="w-[50vw] h-auto bg-transparent -ml-5"></img>
           <h1 id="mki" className="text-4xl -ml-5">MKI</h1>
         </div>
-        <div className="flex flex-col items-center mt-10">
+        <div className="flex flex-col items-center mt-10 z-20">
           <h1 id="catchPhrase" className="text-5xl font-[Poppins]">More than your average virtual assistant</h1>
           <div className="flex w-[100vw] justify-center items-center mt-10">
             <img src={mlogo} className="w-[20vw] h-[20vw] bg-transparent"></img>
@@ -220,8 +213,8 @@ export default function Programming() {
                 <div className='w-fit'>
                   <Link to="tutorial" className="cursor-context-menu" >
                     <div className="downloadbtn_div">
-                      <motion.button id="btnlink" className="w-[250px] h-[52px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
-                         font-bold hover:bg-blue-600 hover:text-[#081b29] text-lg font-[Montserrat] transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
+                      <motion.button id="btnlink" className="w-[250px] h-[52px] bg-transparent border-2 border-gray-300/50 rounded-[10px] text-white
+                         font-bold hover:bg-orange-500 hover:text-[#081b29] text-lg font-[Montserrat] transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
                         <div className='flex justify-center items-center'>
                           <p className="-ml-5">Get Started</p>
                         </div>
@@ -236,8 +229,8 @@ export default function Programming() {
                 <div className='w-fit'>
                   <Link to="docs" className="cursor-context-menu">
                     <div className="downloadbtn_div">
-                      <motion.button className="w-[250px] h-[52px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
-                         font-bold hover:bg-blue-600 hover:text-[#081b29] text-lg font-[Montserrat] transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
+                      <motion.button className="w-[250px] h-[52px] bg-transparent border-2 border-gray-300/50 rounded-[10px] text-white
+                         font-bold hover:bg-orange-500 hover:text-[#081b29] text-lg font-[Montserrat] transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
                         <div className='flex flex-col justify-left -ml-5'>
                           <p>Docs</p>
                         </div>
@@ -313,8 +306,8 @@ export default function Programming() {
               </motion.div>
             ))}
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 mt-20">Benefits</h1>
-          <div className="flex overflow-x-auto space-x-4 pb-8 pt-8 snap-x snap-mandatory pl-2">
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 mt-20">Benefits & Extras</h1>
+          <div className="flex justify-center overflow-x-auto space-x-4 pb-8 pt-8 snap-x snap-mandatory">
             {cards.map((card) => (
               <motion.div
                 key={card.id}
