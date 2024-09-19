@@ -14,6 +14,9 @@ import testImg from "../assets/mainPageTextClip.jpg"
 import coffee from "../assets/coffee.jpg"
 import friend from "../assets/friend.jpg"
 import rarrow from "../assets/right-arrow.jpg"
+import webscout from "../assets/webscout.png"
+import mai from "../assets/MeridianAI.png"
+import matrix from "../assets/matrix.png"
 import mpatt from "../assets/Meridian Pattern.png"
 
 
@@ -40,6 +43,8 @@ export default function Programming() {
   });
 
   const features = [
+    "Meridian-AI",
+    "Instant web accurate results",
     "Task scheduling and automation",
     "Process Management",
     "Built-in anti-malware scan",
@@ -51,7 +56,6 @@ export default function Programming() {
     "Network management",
     "Customizable settings",
     "O.C.R.",
-    "Meridian-AI",
     "Resources monitoring",
     "Context awareness",
     "Behavioral adaptation",
@@ -73,6 +77,37 @@ export default function Programming() {
     "Multiple LLM selection",
     "Hidden eastereggs",
   ]
+
+  const cardsHF = [
+    {
+      id: 1,
+      title: 'Meridian-AI',
+      subtitle: 'Meet the core of MeridianNEXT.',
+      image: mai,
+      content: 'Meridian-AI is the core of MeridianNEXT. It is fully optimized (prompts, tools) and support web queries. You can\'t go wrong with him.'
+    },
+    {
+      id: 2,
+      title: 'Web scouting',
+      subtitle: 'Accurate & super-fast answers, anonymously.',
+      image: webscout,
+      content: 'Ever dreamt of a custom search engine that can give you very accurate answers (and only that) in literally (on average) less than 2s and with anonymous searching?\nNo ads, nothing you don\'t need. No need to scroll and look many website to find the right answer. An average google search with an average internet connection requires 40s. Here in 2s (average), you will have your way more accurate answer.'
+    },
+    {
+      id: 3,
+      title: 'Super Tools',
+      subtitle: 'Super powerful CLI tools.',
+      image: matrix,
+      content: 'All the super powerful tools wrapped in one terminal app. In MKII, a GUI will also be added.'
+    },
+  ]
+
+  type Card = {
+    src: string;
+    title: string;
+    category: string;
+    content: React.ReactNode;
+  };
 
   const cards = [
     {
@@ -112,7 +147,9 @@ export default function Programming() {
     },
   ]
 
-  const [selectedCard, setSelectedCard] = useState(null)
+
+  const [selectedCard, setSelectedCard] = useState<Card | null>(null);
+
 
   return (
     <div className="flex flex-col align-top">
@@ -132,7 +169,10 @@ export default function Programming() {
         </div>
         <div className="flex flex-col items-center mt-10">
           <h1 id="catchPhrase" className="text-5xl font-[Poppins]">More than your average virtual assistant</h1>
-          <img src={mlogo} className="w-[20vw] h-auto bg-transparent mt-10"></img>
+          <div className="flex w-[100vw] justify-center items-center mt-10">
+            <img src={mlogo} className="w-[20vw] h-[20vw] bg-transparent"></img>
+            <img src={mai} className="w-[21vw] h-auto bg-transparent"></img>
+          </div>
         </div>
       </div>
 
@@ -250,13 +290,37 @@ export default function Programming() {
 
       <div className="">
         <div className="relative min-h-screen bg-gradient-to-b from-emerald-800 to-cyan-400 text-white p-8">
-          <div className="flex overflow-x-auto space-x-4 pb-8 pt-8 snap-x snap-mandatory">
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Highligh features</h1>
+          <div className="flex justify-center overflow-x-auto space-x-4 pb-8 pt-8 snap-x snap-mandatory">
+            {cardsHF.map((card) => (
+              <motion.div
+                key={card.id}
+                className="flex-shrink-0 w-72 snap-center"
+                whileHover={{ scale: 1.05 }}
+                onClick={() => setSelectedCard({ ...card, src: card.image, category: 'default' })}
+              >
+                <div className="relative aspect-[3/4] rounded-3xl overflow-hidden cursor-pointer border-[1px] border-white/30">
+                  <img src={card.image} alt={card.title} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40" />
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <h3 className="text-lg font-semibold">{card.title}</h3>
+                    <p className="text-2xl font-bold mt-2">{card.subtitle}</p>
+                  </div>
+                  <div className="absolute top-0 left-0 p-6">
+                    <h3 className="text-lg font-semibold">#{card.id}</h3>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 mt-20">Benefits</h1>
+          <div className="flex overflow-x-auto space-x-4 pb-8 pt-8 snap-x snap-mandatory pl-2">
             {cards.map((card) => (
               <motion.div
                 key={card.id}
                 className="flex-shrink-0 w-72 snap-center"
                 whileHover={{ scale: 1.05 }}
-                onClick={() => setSelectedCard(card)}
+                onClick={() => setSelectedCard({ ...card, src: card.image, category: 'default' })}
               >
                 <div className="relative aspect-[3/4] rounded-3xl overflow-hidden cursor-pointer">
                   <img src={card.image} alt={card.title} className="w-full h-full object-cover" />
@@ -291,7 +355,6 @@ export default function Programming() {
                     <X size={24} />
                   </button>
                   <h2 className="text-3xl font-bold mb-4">{selectedCard.title}</h2>
-                  <p className="text-xl mb-6">{selectedCard.subtitle}</p>
                   <p className="text-gray-300">{selectedCard.content}</p>
                 </motion.div>
               </motion.div>

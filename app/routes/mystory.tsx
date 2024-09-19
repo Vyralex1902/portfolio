@@ -1,6 +1,10 @@
 import type { MetaFunction } from "@remix-run/node";
-import { useEffect, useState } from "react";
-import { motion, stagger, useAnimate } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import {
+  motion, useMotionValueEvent,
+  useScroll,
+  useTransform, stagger, useAnimate
+} from "framer-motion";
 import { ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
