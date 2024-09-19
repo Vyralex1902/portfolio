@@ -23,7 +23,6 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "flowbite": "^2.3.0",
-    "framer": "^2.4.1",
     "framer-motion": "^11.5.4",
     "isbot": "^4.1.0",
     "lucide-react": "^0.441.0",
