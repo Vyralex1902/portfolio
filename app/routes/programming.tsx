@@ -13,20 +13,22 @@ import arrowsvg from "../assets/arrow.svg"
 export default function Programming() {
 
   useEffect(() => {
-    const headingIconElement1 = document.getElementById("headingIcon1");
-    const headingIconElement3 = document.getElementById("headingIcon3");
-    const headingIconElement4 = document.getElementById("headingIcon4");
+    async () => {
+      const headingIconElement1 = document.getElementById("headingIcon1");
+      const headingIconElement3 = document.getElementById("headingIcon3");
+      const headingIconElement4 = document.getElementById("headingIcon4");
 
-    const headingIconElement2 = document.getElementById("headingIcon2");
-    headingIconElement2!.classList.remove("heading-icon");
-    headingIconElement2!.classList.add("heading-icon-selected");
+      const headingIconElement2 = document.getElementById("headingIcon2");
+      headingIconElement2!.classList.remove("heading-icon");
+      headingIconElement2!.classList.add("heading-icon-selected");
 
-    headingIconElement3!.classList.remove("heading-icon-selected");
-    headingIconElement3!.classList.add("heading-icon");
-    headingIconElement1!.classList.remove("heading-icon-selected");
-    headingIconElement1!.classList.add("heading-icon");
-    headingIconElement4!.classList.remove("heading-icon-selected");
-    headingIconElement4!.classList.add("heading-icon");
+      headingIconElement3!.classList.remove("heading-icon-selected");
+      headingIconElement3!.classList.add("heading-icon");
+      headingIconElement1!.classList.remove("heading-icon-selected");
+      headingIconElement1!.classList.add("heading-icon");
+      headingIconElement4!.classList.remove("heading-icon-selected");
+      headingIconElement4!.classList.add("heading-icon");
+    }
 
     console.log("Page loaded.");
   });
@@ -57,12 +59,12 @@ export default function Programming() {
             <h2>Programming Languages I am currently learning/refining (2024)</h2>
             <p>
               <span className="text-purple-400">&gt;</span> Python
+              <span className="text-purple-400">&gt;</span> Rust<br />
             </p>
           </div>
           <div id="sectionDiv">
             <h2>Languages I will probably study</h2>
             <p>
-              <span className="text-purple-400">&gt;</span> C++<br />
               <span className="text-purple-400">&gt;</span> Swift
             </p>
           </div>

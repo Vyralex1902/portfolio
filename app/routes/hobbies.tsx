@@ -39,6 +39,13 @@ export default function HobbiesPage() {
             </p>
           </div>
           <div id="sectionDiv" className="flex flex-col items-center mb-10">
+            <PiNumberFive className="w-14 h-auto text-black dark:text-white" />
+            <h2>Motorcycles</h2>
+            <p className="text-sm max-w-[500px] text-cyan-600 dark:text-cyan-400 text-center">
+              july2024-now
+            </p>
+          </div>
+          <div id="sectionDiv" className="flex flex-col items-center mb-10">
             <PiNumberCircleThree className="w-14 h-auto text-amber-700" />
             <h2>Gym / Weight Lifting</h2>
             <p className="text-sm max-w-[500px] text-cyan-600 dark:text-cyan-400 text-center">
@@ -50,13 +57,6 @@ export default function HobbiesPage() {
             <h2>Hiking</h2>
             <p className="text-sm max-w-[500px] text-cyan-600 dark:text-cyan-400 text-center">
               jul2018-now
-            </p>
-          </div>
-          <div id="sectionDiv" className="flex flex-col items-center mb-10">
-            <PiNumberFive className="w-14 h-auto text-black dark:text-white" />
-            <h2>Fountain Pens</h2>
-            <p className="text-sm max-w-[500px] text-cyan-600 dark:text-cyan-400 text-center">
-              feb2024-now
             </p>
           </div>
           <div id="sectionDiv" className="flex flex-col items-center">
