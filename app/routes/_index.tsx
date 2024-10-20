@@ -33,15 +33,6 @@ export const meta: MetaFunction = () => {
 export default function Index() {
 
   useEffect(() => {
-    async () => {
-      if (window.innerWidth < 900) {
-        Swal.fire('Hey!', "It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC. If you use your mobile device you will miss out on many cool animations and effects.", 'info');
-        document.getElementById("MobileAlert")?.classList.remove("hidden");
-      }
-      else {
-        document.getElementById("MobileAlert")?.classList.add("hidden");
-      }
-    }
     if (
       localStorage.getItem('color-theme') === 'dark' ||
       (!('color-theme' in localStorage) &&
@@ -55,6 +46,13 @@ export default function Index() {
 
     console.log("Page loaded.");
 
+    if (window.innerWidth < 900) {
+      Swal.fire('Hey!', "It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC. If you use your mobile device you will miss out on many cool animations and effects.", 'info');
+      document.getElementById("MobileAlert")?.classList.remove("hidden");
+    }
+    else {
+      document.getElementById("MobileAlert")?.classList.add("hidden");
+    }
   });
 
   return (
