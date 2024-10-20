@@ -57,6 +57,7 @@ export default function Index() {
 
   return (
     <div id="fulldiv" style={{ width: "100vw", height: "100%" }} className="fjc flex-col items-center align-top pt-24 bg-[rgba(14,16,17,1)]">
+      <meta name="description" content="Luca Montanari's portfolio: an aspiring developer (currently still a student). Ready for part-time hiring and freelancing." />
       <input type="text" className="absolute hidden" id="pageName" value={"home"} readOnly></input>
       <div id="MobileAlert" className="absolute top-[75px] max-w-[90vw] text-yellow-400"><p>It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC.</p></div>
       <div className="w-screen h-screen flex flex-col items-center mt-[20vh]">
