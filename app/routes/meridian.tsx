@@ -13,12 +13,9 @@ import mlogo from "../assets/Meridian.png"
 import testImg from "../assets/mainPageTextClip.jpg"
 import coffee from "../assets/coffee.jpg"
 import friend from "../assets/friend.jpg"
-import rarrow from "../assets/right-arrow.jpg"
 import webscout from "../assets/webscout.png"
 import mai from "../assets/MeridianAI.png"
 import matrix from "../assets/matrix.png"
-import mpatt from "../assets/Meridian Pattern.png"
-
 
 
 export default function Meridian() {

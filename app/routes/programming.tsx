@@ -45,7 +45,7 @@ export default function Programming() {
           <div id="sectionDiv">
             <h2>Programming Languages I currently know (2024)</h2>
             <p className="text-sm max-w-[500px] text-gray-400 my-1 text-center -ml-6">The number next to the language (inside of the brackets) represents
-              the date when I since started using that language to devop products.
+              the date when I since started using that language to develope products.
             </p>
             <p>
               <span className="text-purple-400">&gt;</span> Python <span className="text-cyan-800 dark:text-cyan-500">[aug2024]</span><br />
@@ -58,7 +58,7 @@ export default function Programming() {
           <div id="sectionDiv">
             <h2>Programming Languages I am currently learning/refining (2024)</h2>
             <p>
-              <span className="text-purple-400">&gt;</span> Python
+              <span className="text-purple-400">&gt;</span> Python<br />
               <span className="text-purple-400">&gt;</span> Rust<br />
             </p>
           </div>
@@ -75,7 +75,7 @@ export default function Programming() {
                   <Link to="myprojects" className="cursor-context-menu" >
                     <div className="downloadbtn_div">
                       <motion.button id="btnlink" className="w-[250px] h-[52px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
-                         font-bold hover:bg-blue-600 hover:text-[#081b29] text-lg font-[Montserrat] transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
+                         font-bold hover:bg-blue-600 hover:text-white text-lg font-[Montserrat] transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
                         <div className='flex justify-center items-center'>
                           <p className="-ml-5">Explore my projects</p>
                           <img id="arrowimg1" src={arrowsvg}></img>
