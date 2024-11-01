@@ -81,7 +81,7 @@ export default function DocsPage() {
           <h4 className="text-gray-700 dark:text-gray-500">This is my way to share some of the thousands things I learn every month.</h4>
         </div>
         <div className="flex flex-row justify-center z-10">
-          <input id="searchBox" type="text" placeholder="Search for a topic..." className="placeholder-gray-400 bg-gray-800 w-[30vw] rounded-md"></input>
+          <input id="searchBox" type="text" placeholder="Search for a topic..." className="placeholder-gray-400 bg-gray-900 w-[30vw] rounded-md"></input>
         </div>
         <GlowCards></GlowCards>
       </div>

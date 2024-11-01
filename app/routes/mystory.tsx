@@ -150,7 +150,6 @@ My greatest passion is almost ready to become a job. Anyways, enjoy the story no
           <h3 id="subtitle" className="text-sky-600">Chapter six - Trying to be productive</h3>
           <p id="typedtext" className="text-white text-xl mb-[35vh]">
             <br /><br />Recently, I've become fascinated by the idea that focusing on one thing at a time allows you to accomplish almost anything. Initially, I didn’t think much of it, but when I tried to apply it, I noticed it wasn’t really working. Only later did I realize I had been approaching it from the wrong perspective. I would start working, but after a few minutes, I’d get overwhelmed. However, I came to see that at least I was starting, which was a huge improvement over my earlier habit of not starting at all.
-
             I also love the saying that to be more productive, you need to break your tasks down into smaller, manageable pieces. Although I haven't successfully applied these techniques yet, I believe that doing so could almost double my productivity. The main challenge has been that I often struggle to come up with ideas, which is part of why I'm interested in freelancing as a side hustle. If I had specific tasks to work on with some direction, I’d be much more motivated and ready to complete them. So, if you're a company or individual looking to hire a frontend or app developer, I’d love to help.
           </p>
         </div>
