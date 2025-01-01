@@ -6,15 +6,15 @@ import Swal from 'sweetalert2';
 
 import "../styles/home.css";
 
-import mypic1 from "../assets/mypic1.jpeg"
-import mypic2 from "../assets/mypic2.jpeg"
-import mypic3 from "../assets/mypic3.png"
+// import mypic1 from "../assets/mypic1.jpeg"
+// import mypic2 from "../assets/mypic2.jpeg"
+// import mypic3 from "../assets/mypic3.png"
 import mypic3noback from "../assets/mypic3noback.png"
 import MyMainPic from "../assets/mypic2noback.png"
 import arrowsvg from "../assets/arrow.svg"
-import backgroundImg2 from "../assets/mainPageBackground2.jpg"
-import mainGradientBackground from "../assets/mainGradientBackground.jpg"
-import mainPageTextClip from "../assets/mainPageTextClip.jpg"
+// import backgroundImg2 from "../assets/mainPageBackground2.jpg"
+// import mainGradientBackground from "../assets/mainGradientBackground.jpg"
+// import mainPageTextClip from "../assets/mainPageTextClip.jpg"
 import tertitimg from "../assets/terminaltitle.png"
 
 import { FaYoutube, FaInstagram } from "react-icons/fa6";
@@ -24,7 +24,7 @@ import { TbBrandFiverr } from "react-icons/tb";
 export const meta: MetaFunction = () => {
   return [
     { title: "Luca Montanari's Portfolio" },
-    { name: "Luca Montanari's Portfolio", content: "Welcome to Luca's Portfolio!" },
+    { name: "Luca Montanari's Portfolio", content: "Welcome to Luca's Portfolio! I'm a free time web and app developer. Sometimes a designer." },
   ];
 };
 
@@ -47,7 +47,7 @@ export default function Index() {
     console.log("Page loaded.");
 
     if (window.innerWidth < 900) {
-      Swal.fire('Hey!', "It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC. If you use your mobile device you will miss out on many cool animations and effects.", 'info');
+      Swal.fire('Hey!', "It looks like you're on mobile! I firmly advise you to use the destkop view or just use a PC. If you use mobile view you will miss out on many cool animations and effects. Furthermore, the website will look and feel bad.", 'info');
       document.getElementById("MobileAlert")?.classList.remove("hidden");
     }
     else {
@@ -67,7 +67,7 @@ export default function Index() {
           font-[Montserrat]" data-type='[ "Web and App Developer.", "Front-end developer.", "Tech enthusiast." ]'></h2>
           <h2 className="ml-2 mb-5 bg-gradient-to-r from-green-400 to-cyan-400 inline-block text-transparent bg-clip-text text-[20px] font-[Montserrat]">Building websites and apps  for startups and individuals with creativity in mind.</h2>
           <div className="flex gap-2">
-            <p className="text-white font-[Montserrat] ml-2">A thriving life starts from the ground up and rises steadily...</p>
+            <p className="text-white font-[Montserrat] ml-2">"Make your worst days your most productive ones" - Me...</p>
             <Link to="mystory" className="cursor-context-menu">
               <p className="underline text-purple-600 hover:text-purple-500">read my story</p>
             </Link></div>
@@ -204,7 +204,6 @@ export default function Index() {
             <br /><span className="text-purple-400">~</span> AirPods Pro 1
             <br /><span className="text-purple-400">~</span> Apple Watch SE 2
             <br /><span className="text-purple-400">~</span> MacBook Air M3 15'
-            <br /><span className="text-purple-400">~</span> Apple Magic Mouse
             <br /><span className="text-purple-400">~</span> Windows Desktop PC (<Link to="pcspecs" className="cursor-context-menu"><span className="text-purple-600 hover:text-purple-500">specs</span></Link>)
           </p>
         </div>
